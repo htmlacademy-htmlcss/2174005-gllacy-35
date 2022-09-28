@@ -15,10 +15,10 @@
 
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link">Каталог</a>
+          <a class="navigation-link navigation-link-current">Каталог</a>
           <ul class="navigation-dropdown">
             <li class="navigation-dropdown-item"><a href="#"><b>Новинки</b></a></li>
-            <li class="navigation-dropdown-item"><a>Сливочное</a></li>
+            <li class="navigation-dropdown-item navigation-link-current"><a>Сливочное</a></li>
             <li class="navigation-dropdown-item"><a href="#">Щербеты</a></li>
             <li class="navigation-dropdown-item"><a href="#">Фруктовый лёд</a></li>
             <li class="navigation-dropdown-item"><a href="#">Мелорин</a></li>
@@ -48,7 +48,105 @@
     </nav>
   </header>
 
-  <main class="main-index"></main>
+  <main class="main-inner">
+    <header class="inner-header">
+      <h1 class="inner-header-title">Сливочное мороженое</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Каталог</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Сливочное мороженое</a>
+        </li>
+      </ul>
+    </header>
+
+    <section class="catalog-products">
+      <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Сортировка:</legend>
+          <select class="select-control">
+            <option value="popular">по популярности</option>
+          </select>
+        </fieldset>
+
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
+        </fieldset>
+
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Жирность:</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="product-fat" value="zero-fat">
+            0%
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="product-fat" value="ten-percent" checked>
+            до 10%
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="product-fat" value="thirty-percent">
+            до 30%
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="product-fat" value="over-thirty-percent">
+            выше 30%
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Наполнители:</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="chocolate" checked>
+                шоколадные
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="sugar" checked>
+                сахарные посыпки
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="fruits">
+                фрукты
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="syrop">
+                сиропы
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="jam">
+                джемы
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button" type="submit">Применить</button>
+      </form>
+    </section>
+
+  </main>
 
   <footer class="page-footer">
     <section class="socials">
@@ -71,7 +169,7 @@
       <a class="academy-logo" href="https://htmlacademy.ru/">
         <img src="#" alt="Логотип компании HTML academy.">
       </a>
-      <p class="copyright-text">Сделано в <a class="academy-site" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
+      <p class="copyright-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
     </section>
   </footer>
 </body>
