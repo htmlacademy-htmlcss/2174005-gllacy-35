@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Магазин мороженого "Gllacy Shop"</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -121,17 +122,17 @@
     </section>
 
     <section class="offer">
-      <h2>Заказывайте мороженое и получайте подарки!</h2>
+      <h2 class="offer-title">Заказывайте мороженое и получайте подарки!</h2>
       <ul class="offer-list">
         <li class="offer-item">
-          <h3 class="offer-title">Малинка даром!</h3>
+          <h3 class="offer-item-title">Малинка даром!</h3>
           <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a class="offer-item-button button" href="#">Хочу подарок</a>
           <img src="images/offer-raspberry.png" width="219" height="268" alt="Свежая малина в вафельном рожке.">
         </li>
 
         <li class="offer-item">
-          <h3 class="offer-title">Маршмеллоу даром!</h3>
+          <h3 class="offer-item-title">Маршмеллоу даром!</h3>
           <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
           <a class="offer-item-button button" href="#">Хочу подарок</a>
           <img src="images/offer-marshmallow.png" width="219" height="268" alt="Маршмеллоу в вафельном рожке.">
@@ -140,7 +141,7 @@
     </section>
 
     <section class="popular">
-      <h2>Попробуйте самые популярные вкусы нашего мороженого</h2>
+      <h2 class="popular-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
       <ul class="popular-list">
         <li class="popular-card">
           <a class="popular-card-link" href="#">
@@ -148,37 +149,37 @@
             <h3 class="popular-card-title">Малинка</h3>
           </a>
           <p class="popular-card-description">Сливочное мороженое с малиновым джемом</p>
-          <p class="popular-card-price">310 ₽<span class="popular-card-weight">/кг</span></p>
+          <p class="popular-card-price">310 ₽/кг</span></p>
           <button class="cart-button" type="submit"><span class="visually-hidden">Добавить в корзину</span></button>
         </li>
 
         <li class="popular-card">
-          <a class="product-card-link" href="#">
+          <a class="popular-card-link" href="#">
             <img class="popular-card-image" src="images/catalog/catalog-pistachio.jpg" width="168" height="168" alt="Шарик мороженого Фисташка">
             <h3 class="popular-card-title">Фисташка</h3>
           </a>
           <p class="popular-card-description">Фисташковый пломбир с кусочками шоколада</p>
-          <p class="popular-card-price">340 ₽<span class="popular-card-weight">/кг</span></p>
+          <p class="popular-card-price">340 ₽/кг</span></p>
           <button class="cart-button" type="submit"><span class="visually-hidden">Добавить в корзину</span></button>
         </li>
 
         <li class="popular-card">
-          <a class="product-card-link" href="#">
+          <a class="popular-card-link" href="#">
             <img class="popular-card-image" src="images/catalog/catalog-blueberry.jpg" width="168" height="168" alt="Шарик мороженого Черника">
             <h3 class="popular-card-title">Черника</h3>
           </a>
           <p class="popular-card-description">Крем-брюле с черничным джемом</p>
-          <p class="popular-card-price">330 ₽<span class="popular-card-weight">/кг</span></p>
+          <p class="popular-card-price">330 ₽/кг</span></p>
           <button class="cart-button" type="submit"><span class="visually-hidden">Добавить в корзину</span></button>
         </li>
 
         <li class="popular-card">
-          <a class="product-card-link" href="#">
+          <a class="popular-card-link" href="#">
             <img class="popular-card-image" src="images/catalog/catalog-bubblegum.jpg" width="168" height="168" alt="Шарик мороженого Бабл-гам">
             <h3 class="popular-card-title">Бабл-гам</h3>
           </a>
           <p class="popular-card-description">Ванильный пломбир со сладкой посыпкой</p>
-          <p class="popular-card-price">320 ₽<span class="popular-card-weight">/кг</span></p>
+          <p class="popular-card-price">320 ₽/кг</span></p>
           <button class="cart-button" type="submit"><span class="visually-hidden">Добавить в корзину</span></button>
         </li>
       </ul>
@@ -186,29 +187,31 @@
 
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
-      <p>Магазин Глейси - это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</p>
-      <ul class="advantages-list">
-        <li class="advantages-item">
-          <p class="advantages-description">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования
+      <div class="advantages-wrapper">
+        <p class="advantages-title">Магазин Глейси - это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <p class="advantages-description">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования
              и проверенных временем технологий.
-          </p>
-        </li>
-        <li class="advantages-item">
-          <p class="advantages-description">Для приготовления мороженого используются сливки и молоко высочайшего качества.
+            </p>
+          </li>
+          <li class="advantages-item">
+            <p class="advantages-description">Для приготовления мороженого используются сливки и молоко высочайшего качества.
              Все ингредиенты и добавки произведены из натурального сырья.
-          </p>
-        </li>
-        <li class="advantages-item">
-          <p class="advantages-description">Закупка ингредиентов производится только у проверенных фермерских хозяйств,
+            </p>
+          </li>
+          <li class="advantages-item">
+            <p class="advantages-description">Закупка ингредиентов производится только у проверенных фермерских хозяйств,
              с которыми нас связывает долговременное сотрудничество.
-          </p>
-        </li>
-        <li class="advantages-item">
-          <p class="advantages-description">Доставка нашего мороженого осуществляется в специальном термопаке, который не дает мороженому
+            </p>
+          </li>
+          <li class="advantages-item">
+            <p class="advantages-description">Доставка нашего мороженого осуществляется в специальном термопаке, который не дает мороженому
              растаять и позволяет сохранить превосходный вкус.
-          </p>
-        </li>
-      </ul>
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <div class="container">
