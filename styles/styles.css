@@ -26,15 +26,18 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
+  font-weight: 400;
   background-color: #feafc3;
-  color: #2D3440;
+  color: #2d3440;
 }
+
+/*Шапка сайта*/
 
 .navigation a {
   line-height: 20px;
   text-align: center;
   text-decoration: none;
-  color: #2D3440;
+  color: #2d3440;
 }
 
 .phone {
@@ -44,6 +47,8 @@ body {
 .navigation-user {
   font-size: 14px;
 }
+
+/*Слайдер*/
 
 .best-product-title {
   font-size: 36px;
@@ -65,7 +70,7 @@ body {
 .best-product-item-button,
 .offer-item-button {
   text-decoration: none;
-  color: #2D3440;
+  color: #2d3440;
   background-color: #fcfcfc;
 }
 
@@ -78,6 +83,8 @@ body {
   line-height: 46px;
   font-weight: 900;
 }
+
+/*Акционное предложение*/
 
 .offer-title, .advantages-title {
   text-align: center;
@@ -92,6 +99,8 @@ body {
   line-height: 30px;
   font-weight: 700;
 }
+
+/*Популярное из каталога*/
 
 .popular {
   text-align: center;
@@ -108,7 +117,7 @@ body {
   line-height: 24px;
   font-weight: 700;
   text-decoration: none;
-  color: #2D3440;
+  color: #2d3440;
 }
 
 .popular-card-price {
@@ -117,19 +126,20 @@ body {
   font-weight: 700;
 }
 
+/*Преимущества*/
+
 .advantages {
   background: url("../images/waffle.png") no-repeat;
   background-size: 100% auto;
 }
 
-.advantages-wrapper {
+.advantages-wrapper,
+.article,
+.submit-form  {
   background-color: #ffffff;
 }
 
-.article,
-.submit-form {
-  background-color: #ffffff;
-}
+/*Статья и подписка*/
 
 .article {
   width: 570px;
@@ -151,4 +161,118 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: #2D3440;
+}
+
+.submit-wrapper {
+  width: 570px;
+  height: 224px;
+  background: url("../images/post.png") no-repeat;
+  background-size: 100% auto;
+}
+
+.submit-form input {
+  width: 332px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.submit-button,
+.delivery-button {
+  font-size: 16px;
+  color: #fcfcfc;
+  background-color: #ff2f64;
+}
+
+/* Доставка */
+
+.delivery {
+  width: 1170px;
+  height: 534px;
+
+  background-color: #fcfcfc;
+  background: url("../images/delivery.jpg") no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.order {
+  background-color: #fcfcfc;
+}
+
+.form-label {
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.form-text {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Контакты */
+
+.contacts {
+  width: 1170px;
+  height: 492px;
+
+  background-color: #fcfcfc;
+  background: url("../images/address.jpg") no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.contacts-wrapper {
+  background-color: #fcfcfc;
+}
+
+.contacts-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contacts-address-text {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.contacts-phone {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #2d3440;
+}
+
+.contacts-phone-time {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.client-contacts-form {
+  text-decoration: none;
+  background-color: #ff2f64;
+  color: #fcfcfc;
+}
+
+
+/* Подвал */
+
+.info-item a {
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2d3440;
+}
+
+.copyright-text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.htmlacademy-link {
+  color: #2d3440;
+  text-decoration-color: rgba(45, 52, 64, 0.5);
 }
