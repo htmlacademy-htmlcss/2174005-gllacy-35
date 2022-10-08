@@ -74,10 +74,7 @@ body {
   background-color: #fcfcfc;
 }
 
-.offer-title,
-.popular-title,
-.advantages-title,
-.delivery-title {
+.title {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
@@ -142,7 +139,7 @@ body {
 
 .article {
   width: 570px;
-  height: 224px;
+  min-height: 224px;
   background: url("../images/article.jpg") no-repeat;
   background-size: 100% auto;
   background-position: center;
@@ -164,7 +161,7 @@ body {
 
 .submit-wrapper {
   width: 570px;
-  height: 224px;
+  min-height: 224px;
   background: url("../images/post.png") no-repeat;
   background-size: 100% auto;
 }
@@ -187,7 +184,7 @@ body {
 
 .delivery {
   width: 1170px;
-  height: 534px;
+  min-height: 534px;
 
   background-color: #fcfcfc;
   background: url("../images/delivery.jpg") no-repeat;
@@ -213,7 +210,7 @@ body {
 
 .contacts {
   width: 1170px;
-  height: 492px;
+  min-height: 492px;
 
   background-color: #fcfcfc;
   background: url("../images/address.jpg") no-repeat;
