@@ -22,7 +22,16 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -33,6 +42,19 @@ body {
 
 /*Шапка сайта*/
 
+.navigation {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 431px;
+}
+
 .navigation a {
   line-height: 20px;
   text-align: center;
@@ -41,11 +63,27 @@ body {
 }
 
 .phone {
+  font-size: 16px;
   font-weight: 700;
 }
 
 .navigation-user {
+  margin-left: auto;
   font-size: 14px;
+}
+
+.logo {
+  display: block;
+  margin-right: auto;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1170px;
+  margin: 0 auto;
 }
 
 /*Слайдер*/
@@ -86,7 +124,17 @@ body {
   text-align: center;
 }
 
+.offer-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
 .offer-item {
+  width: 570px;
+  min-height: 268px;
   background-color: #ff7799;
 }
 
@@ -102,9 +150,16 @@ body {
   text-align: center;
 }
 
-.popular-card {
-  margin-bottom: 10px; /*внешний отступ - временная мера, чтобы карточки не сливались в единое целое*/
+.popular-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
+.popular-card {
+  width: 270px;
   background-color: #fcfcfc;
 }
 
@@ -125,17 +180,40 @@ body {
 /*Преимущества*/
 
 .advantages {
-  background: url("../images/waffle.png") no-repeat;
-  background-size: 100% auto;
+  position: relative;
+  width: 1170px;
+  height: 480px;
+  background: url("../images/waffle.png") repeat;
+  border-radius: 16px;
 }
 
 .advantages-wrapper,
 .article,
-.submit-form  {
+.submit-wrapper  {
   background-color: #ffffff;
 }
 
+.advantages-wrapper {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  right: 24px;
+  bottom: 24px;
+  width: 1122px;
+  min-height: 432px;
+  background-color: #f8f7f4;
+  border-radius: 16px;
+}
+
 /*Статья и подписка*/
+
+.article-container {
+  width: 1170px;
+  min-height: 224px;
+
+  display: flex;
+  justify-content: space-between;
+}
 
 .article {
   width: 570px;
@@ -143,6 +221,7 @@ body {
   background: url("../images/article.jpg") no-repeat;
   background-size: 100% auto;
   background-position: center;
+  border-radius: 16px;
 }
 
 .article-title {
@@ -159,11 +238,24 @@ body {
   color: #2D3440;
 }
 
-.submit-wrapper {
+.submit-container {
+  position: relative;
   width: 570px;
   min-height: 224px;
   background: url("../images/post.png") no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.submit-wrapper {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  width: 558;
+  min-height: 212px;
+  border-radius: 16px;
 }
 
 .submit-form input {
@@ -192,7 +284,9 @@ body {
   background-position: center;
 }
 
-.order {
+.delivery-container {
+  width: 500px;
+  height: 406px;
   background-color: #fcfcfc;
 }
 
@@ -218,7 +312,9 @@ body {
   background-position: center;
 }
 
-.contacts-wrapper {
+.contacts-container {
+  width: 343px;
+  height: 364px;
   background-color: #fcfcfc;
 }
 
@@ -256,11 +352,27 @@ body {
 
 /* Подвал */
 
+.page-footer-container {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.page-footer-container .socials {
+  max-width: 144px;
+  margin-right: 299px;
+}
+
 .info-item a {
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
   color: #2d3440;
+}
+
+.copyright {
+  margin-left: auto;
+  width: 193px;
 }
 
 .copyright-text {
@@ -302,7 +414,14 @@ body {
 
 /* Фильтры */
 
+.catalog-products {
+  width: 1170px;
+  display: flex;
+  flex-direction: column;
+}
+
 .catalog-filter {
+  width: 823px;
   font-size: 14px;
   line-height: 20px;
 }
@@ -316,6 +435,12 @@ body {
 }
 
 /*Карточки каталога*/
+
+.product-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
 .product-card {
   margin-bottom: 10px; /*внешний отступ - временная мера, чтобы карточки не сливались в единое целое*/
