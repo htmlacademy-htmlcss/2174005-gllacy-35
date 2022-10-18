@@ -612,6 +612,8 @@ box-sizing: border-box;
 
 .social-list {
   display: flex;
+  flex-wrap: wrap;
+  width: 104px;
 }
 
 .social-list-item a {
@@ -625,9 +627,10 @@ box-sizing: border-box;
 
 .social-list-item {
   margin-right: 16px;
+  margin-bottom: 8px;
 }
 
-.social-list-item:last-child {
+.social-list-item:nth-child(3n) {
   margin: 0;
 }
 
@@ -660,7 +663,14 @@ box-sizing: border-box;
 
 /* -------Каталог------- */
 
+.main-inner {
+  padding-top: 32px;
+}
+
 .inner-header-title {
+  margin-top: 16px;
+  margin-bottom: 40px;
+
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
@@ -669,13 +679,19 @@ box-sizing: border-box;
 /* Хлебные крошки */
 
 .breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
   color: #2d3440;
+  list-style-type: none;
 }
 
 .breadcrumbs-link {
+  margin-right: 28px;
   text-decoration: none;
   color: inherit;
 }
@@ -693,16 +709,32 @@ box-sizing: border-box;
 }
 
 .catalog-filter {
+  display: flex;
+  flex-wrap: wrap;
   width: 823px;
+  margin-bottom: 44px;
+
   font-size: 14px;
   line-height: 20px;
 }
 
 .filter {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
   background-color:  rgba(252, 252, 252, 0.3);
+  list-style-type: none;
+}
+
+.catalog-filter-group {
+  margin-right: 24px;
+  margin-bottom: 16px;
 }
 
 .catalog-filter-button {
+  align-self: center;
+  padding: 8px 53px;
   font-size: 14px;
 }
 
@@ -713,6 +745,7 @@ box-sizing: border-box;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
+  margin-bottom: 16px;
   padding: 0;
 
   list-style: none;
@@ -720,7 +753,6 @@ box-sizing: border-box;
 
 .product-card {
   width: 270px;
-
 
   text-align: center;
 
@@ -743,7 +775,28 @@ box-sizing: border-box;
 
 /*Пагинация*/
 
+.pagination-container {
+  display: flex;
+  align-items: center;
+  width: 1170px;
+  padding: 41px 0;
+}
+
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 7px;
+}
+
 .pagination-show-more {
+  margin-left: auto;
+  margin-right: 335px;
+
   font-size: 16px;
 
   background-color: #fcfcfc;
@@ -753,6 +806,23 @@ box-sizing: border-box;
   line-height: 20px;
   text-decoration: none;
   color: #2d3440;
+}
+
+.pagination-item .pagination-number {
+display: block;
+box-sizing: border-box;
+width: 24px;
+height: 24px;
+padding: 2px 8px;
+}
+
+.pagination-prev,
+.pagination-next {
+  display: block;
+  min-width: 16px;
+  min-height: 16px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .pagination-current {
