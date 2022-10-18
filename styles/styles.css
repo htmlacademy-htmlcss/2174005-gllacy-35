@@ -104,6 +104,8 @@ body {
 .navigation-user .navigation-link {
   min-width: 16px;
   min-height: 16px;
+
+  background: rgba(252, 252, 252, 0.3);
 }
 
 .navigation-item .phone {
@@ -168,6 +170,30 @@ body {
   text-align: center;
 }
 
+.slider-button {
+  min-width: 38px;
+  min-height: 38px;
+}
+
+.slider-pagination {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slider-pagination-item {
+  margin-right: 8px;
+}
+
+.slider-pagination-item:last-child {
+  margin: 0;
+}
+
+.slider-pagination-button {
+  min-width: 12px;
+  min-height: 12px;
+}
+
 .best-product-item-button,
 .offer-item-button {
   text-decoration: none;
@@ -204,16 +230,24 @@ body {
 }
 
 .offer-item {
-  display: flex;
+  box-sizing: border-box;
   width: 570px;
   min-height: 268px;
+  padding: 36px;
+  padding-right: 206px;
 
   background-color: #ff7799;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  border-radius: 16px;
 }
 
-.offer-container {
-  padding: 36px;
-  padding-right: 0;
+.offer-item-raspberry {
+  background-image: url("../images/offer-raspberry.png");
+}
+
+.offer-item-marshmallow {
+  background-image: url("../images/offer-marshmallow.png");
 }
 
 .offer-item-title {
@@ -232,10 +266,6 @@ body {
 
 .offer-item-button {
   width: fit-content;
-}
-
-.offer-item img {
-  display: block;
 }
 
 /*Популярное из каталога*/
@@ -348,8 +378,11 @@ body {
 }
 
 .article {
+  box-sizing: border-box;
   width: 570px;
   min-height: 224px;
+  padding-top: 32px;
+  padding-left: 32px;
 
   background: url("../images/article.jpg") no-repeat;
   background-size: 100% auto;
@@ -360,8 +393,6 @@ body {
 .article-title {
   margin-top: 0;
   margin-bottom: 12px;
-  padding-top: 32px;
-  padding-left: 32px;
 
   font-size: 16px;
   line-height: 20px;
@@ -371,7 +402,6 @@ body {
 .article a {
   display: block;
   width: 303px;
-  padding-left: 32px;
 
   font-size: 24px;
   line-height: 30px;
@@ -442,6 +472,7 @@ body {
   background: url("../images/delivery.jpg") no-repeat;
   background-size: 100% auto;
   background-position: center;
+  border-radius: 16px;
 }
 
 .delivery-title-container {
@@ -461,12 +492,12 @@ body {
 .delivery-container {
   box-sizing: border-box;
   width: 500px;
-  height: 406px;
   margin: 64px;
   margin-left: auto;
   padding: 40px;
 
   background-color: #fcfcfc;
+  border-radius: 8px;
 }
 
 .delivery-container .delivery-description {
@@ -486,28 +517,44 @@ body {
 /* Контакты */
 
 .contacts {
+  box-sizing: border-box;
+
   width: 1170px;
   min-height: 492px;
+  padding: 64px;
+  padding-right: 763px;
 
   background-color: #fcfcfc;
   background: url("../images/address.jpg") no-repeat;
   background-size: 100% auto;
   background-position: center;
+  border-radius: 16px;
 }
 
 .contacts-container {
+box-sizing: border-box;
+
   width: 343px;
   height: 364px;
+  padding: 40px;
 
   background-color: #fcfcfc;
+  border-radius: 8px;
 }
 
 .contacts-subtitle {
+  max-width: 203px;
+  margin-top: 0;
+  margin-bottom: 12px;
+
   font-size: 16px;
   font-weight: 400;
 }
 
 .contacts-address-text {
+  margin-top: 0;
+  margin-bottom: 24px;
+
   font-style: normal;
   font-size: 20px;
   line-height: 24px;
@@ -515,6 +562,8 @@ body {
 }
 
 .contacts-phone {
+  margin: 0;
+
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -523,6 +572,9 @@ body {
 }
 
 .contacts-phone-time {
+  margin: 0;
+  margin-bottom: 32px;
+
   font-size: 14px;
   line-height: 20px;
 }
@@ -539,14 +591,48 @@ body {
 
 .page-footer-container {
   display: flex;
-  margin: 0 auto;
-
+  justify-content: space-between;
+  align-items: center;
   width: 1170px;
+  min-height: 153px;
+  margin: 0 auto;
 }
 
 .page-footer-container .socials {
   max-width: 144px;
-  margin-right: 299px;
+}
+
+.social-list,
+.info-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social-list {
+  display: flex;
+}
+
+.social-list-item a {
+  display: block;
+
+  min-width: 24px;
+  min-height: 24px;
+
+  outline: 1px solid black; /*временная обводка, пока не добавлены иконки*/
+}
+
+.social-list-item {
+  margin-right: 16px;
+}
+
+.social-list-item:last-child {
+  margin: 0;
+}
+
+.info-list {
+  width: 356px;
 }
 
 .info-item a {
@@ -558,7 +644,6 @@ body {
 
 .copyright {
   width: 193px;
-  margin-left: auto;
 }
 
 .copyright-text {
