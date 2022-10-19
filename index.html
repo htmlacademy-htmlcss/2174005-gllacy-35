@@ -18,7 +18,7 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог</a>
-            <ul class="navigation-dropdown">
+            <ul class="navigation-dropdown" hidden> <!--выпадающий список скрыт временно-->
               <li class="navigation-dropdown-item"><a href="#"><b>Новинки</b></a></li>
               <li class="navigation-dropdown-item"><a href="catalog.html">Сливочное</a></li>
               <li class="navigation-dropdown-item"><a href="#">Щербеты</a></li>
@@ -39,16 +39,15 @@
             <a class="phone" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+            <a class="navigation-link search" href="#"><span class="visually-hidden">Поиск</span></a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Вход</a>
+            <a class="navigation-link enter" href="#">Вход</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Корзина</span> 2 товара</a>
+            <a class="navigation-link cart" href="#"><span class="visually-hidden">Корзина</span> 2 товара</a>
           </li>
         </ul>
-
     </nav>
   </header>
 
@@ -112,7 +111,7 @@
         <div class="socials">
           <ul class="social-list">
             <li class="social-list-item"><a href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a></li>
-            <li class="social-list-item"><a href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКонтакте</span></li>
+            <li class="social-list-item"><a href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКонтакте</span></a></li>
             <li class="social-list-item"><a href="https://youtube.com/user/htmlacademyru"><span class="visually-hidden">Youtube</span></a></li>
           </ul>
         </div>
@@ -121,19 +120,16 @@
       <section class="offer">
         <h2 class="offer-title title">Заказывайте мороженое и получайте подарки!</h2>
         <ul class="offer-list">
-
-          <li class="offer-item">
+          <li class="offer-item offer-item-raspberry">
             <h3 class="offer-item-title">Малинка даром!</h3>
             <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
             <a class="offer-item-button button" href="#">Хочу подарок</a>
-            <img src="images/offer-raspberry.png" width="219" height="268" alt="Свежая малина в вафельном рожке.">
           </li>
 
-          <li class="offer-item">
+          <li class="offer-item offer-item-marshmallow">
             <h3 class="offer-item-title">Маршмеллоу даром!</h3>
             <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
             <a class="offer-item-button button" href="#">Хочу подарок</a>
-            <img src="images/offer-marshmallow.png" width="219" height="268" alt="Маршмеллоу в вафельном рожке.">
           </li>
         </ul>
       </section>
@@ -147,7 +143,7 @@
               <h3 class="popular-card-title">Малинка</h3>
             </a>
             <p class="popular-card-description">Сливочное мороженое с малиновым джемом</p>
-            <p class="popular-card-price">310 ₽/кг</span></p>
+            <p class="popular-card-price">310 ₽/кг</p>
             <button class="cart-button" type="submit"><span class="visually-hidden">Добавить в корзину</span></button>
           </li>
 
@@ -157,7 +153,7 @@
               <h3 class="popular-card-title">Фисташка</h3>
             </a>
             <p class="popular-card-description">Фисташковый пломбир с кусочками шоколада</p>
-            <p class="popular-card-price">340 ₽/кг</span></p>
+            <p class="popular-card-price">340 ₽/кг</p>
             <button class="cart-button" type="submit"><span class="visually-hidden">Добавить в корзину</span></button>
           </li>
 
@@ -167,7 +163,7 @@
               <h3 class="popular-card-title">Черника</h3>
             </a>
             <p class="popular-card-description">Крем-брюле с черничным джемом</p>
-            <p class="popular-card-price">330 ₽/кг</span></p>
+            <p class="popular-card-price">330 ₽/кг</p>
             <button class="cart-button" type="submit"><span class="visually-hidden">Добавить в корзину</span></button>
           </li>
 
@@ -177,7 +173,7 @@
               <h3 class="popular-card-title">Бабл-гам</h3>
             </a>
             <p class="popular-card-description">Ванильный пломбир со сладкой посыпкой</p>
-            <p class="popular-card-price">320 ₽/кг</span></p>
+            <p class="popular-card-price">320 ₽/кг</p>
             <button class="cart-button" type="submit"><span class="visually-hidden">Добавить в корзину</span></button>
           </li>
         </ul>
@@ -215,7 +211,7 @@
       <div class="article-container">
         <article class="article">
           <h2 class="article-title">Новое в нашем блоге</h2>
-          <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+          <a href="#">10 способов сервировки фруктовых щербетов <br>к столу</a>
         </article>
         <div class="submit-container">
           <div class="submit-wrapper">
@@ -231,13 +227,14 @@
       </div>
 
       <section class="delivery">
-        <h2 class="delivery-title title">Доставка любимого мороженого на дом</h2>
-        <p class="delivery-description">Хочется полакомиться любимым десертом, но нет времени съездить в магазин?
-          Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
-
+        <div class="delivery-title-container">
+          <h2 class="delivery-title title">Доставка любимого мороженого на дом</h2>
+          <p class="delivery-description">Хочется полакомиться любимым десертом, но нет времени съездить в магазин?
+            Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+        </div>
         <div class="delivery-container">
           <h3 class="visually-hidden">Заказать</h3>
-          <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+          <p class="delivery-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
           <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="delivery-form-date">
               <label class="form-label" for="delivery-date">Дата</label>
@@ -261,7 +258,7 @@
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts-container">
           <h3 class="contacts-subtitle">Адрес главного офиса и офлайн-магазина:</h3>
-          <address><p class="contacts-address-text">наб. реки Карповки, 5 лит П, Санкт-Петербург</p></address>
+          <address><p class="contacts-address-text">наб. реки Карповки, 5<br>лит П, Санкт-Петербург</p></address>
           <h3 class="contacts-subtitle">Для заказов по телефону:</h3>
           <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <p class="contacts-phone-time">(с 10 до 20 ежедневно)</p>
@@ -278,7 +275,7 @@
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="social-list">
           <li class="social-list-item"><a href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a></li>
-          <li class="social-list-item"><a href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКонтакте</span></li>
+          <li class="social-list-item"><a href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКонтакте</span></a></li>
           <li class="social-list-item"><a href="https://youtube.com/user/htmlacademyru"><span class="visually-hidden">Youtube</span></a></li>
         </ul>
       </section>
