@@ -696,7 +696,6 @@ box-sizing: border-box;
 
 .social-list,
 .info-list {
-  display: flex;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -727,6 +726,10 @@ box-sizing: border-box;
 }
 
 .info-list {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 8px 24px;
+
   width: 356px;
 }
 
