@@ -330,6 +330,8 @@ body {
   margin-bottom: 16px;
 
   border-radius: 50%;
+
+  object-fit: contain;
   }
 
 .popular-card-title {
@@ -405,9 +407,19 @@ body {
 }
 
 .advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 32px;
+
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.advantages-item {
+  display: flex;
+  column-gap: 16px;
+  width: 505px;
 }
 
 .advantages-description {
@@ -820,7 +832,9 @@ box-sizing: border-box;
   margin-bottom: 16px;
 
   border-radius: 50%;
-  }
+
+  object-fit: contain;
+}
 
 .product-card-title {
   margin-top: 0;
