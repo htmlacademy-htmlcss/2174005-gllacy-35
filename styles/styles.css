@@ -294,11 +294,30 @@ body {
 
 .popular-card {
   width: 270px;
+  min-height: 332px;
+}
+
+.transparent-container {
+  min-height: 51px;
+}
+
+.card-container {
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  padding-left: 43px;
+  padding-right: 37px;
+  padding-bottom: 24px;
 
   background-color: #fcfcfc;
+  border-radius: 8px;
 }
 
 .popular-card-link {
+  grid-column: 1 / -1;
+
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -306,7 +325,35 @@ body {
   color: #2d3440;
 }
 
+.popular-card-image {
+  margin-top: -51px;
+  margin-bottom: 16px;
+
+  border-radius: 50%;
+  }
+
+.popular-card-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.popular-card-description {
+  grid-column: 1 / -1;
+
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.card-price-container {
+  grid-column: 1 / -1;
+
+  display: flex;
+  justify-content: space-between;
+}
+
 .popular-card-price {
+  margin: 0;
+
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -741,9 +788,9 @@ box-sizing: border-box;
 /*Карточки каталога*/
 
 .product-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 40px 30px;
   margin: 0;
   margin-bottom: 16px;
   padding: 0;
@@ -753,13 +800,14 @@ box-sizing: border-box;
 
 .product-card {
   width: 270px;
+  min-height: 332px;
 
   text-align: center;
-
-  background-color: #fcfcfc;
 }
 
 .product-card-link {
+  grid-column: 1 / -1;
+
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -767,7 +815,28 @@ box-sizing: border-box;
   color: #2d3440;
 }
 
+.product-card-image {
+  margin-top: -51px;
+  margin-bottom: 16px;
+
+  border-radius: 50%;
+  }
+
+.product-card-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  }
+
+.product-card-description {
+  grid-column: 1 / -1;
+
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
 .product-card-price {
+  margin: 0;
+
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
