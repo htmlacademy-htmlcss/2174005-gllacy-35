@@ -346,14 +346,8 @@ body {
   margin-bottom: 16px;
 }
 
-.card-price-container {
-  grid-column: 1 / -1;
-
-  display: flex;
-  justify-content: space-between;
-}
-
 .popular-card-price {
+  justify-self: left;
   margin: 0;
 
   font-size: 20px;
@@ -362,6 +356,7 @@ body {
 }
 
 .cart-button {
+  justify-self: right;
   min-width: 14px;
   min-height: 14px;
 }
@@ -885,6 +880,8 @@ box-sizing: border-box;
 }
 
 .product-card-price {
+  justify-self: left;
+
   margin: 0;
 
   font-size: 20px;
