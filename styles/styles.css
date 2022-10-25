@@ -294,11 +294,30 @@ body {
 
 .popular-card {
   width: 270px;
+  min-height: 332px;
+}
+
+.transparent-container {
+  min-height: 51px;
+}
+
+.card-container {
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  padding-left: 43px;
+  padding-right: 37px;
+  padding-bottom: 24px;
 
   background-color: #fcfcfc;
+  border-radius: 8px;
 }
 
 .popular-card-link {
+  grid-column: 1 / -1;
+
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -306,13 +325,38 @@ body {
   color: #2d3440;
 }
 
+.popular-card-image {
+  margin-top: -51px;
+  margin-bottom: 16px;
+
+  border-radius: 50%;
+
+  object-fit: contain;
+  }
+
+.popular-card-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.popular-card-description {
+  grid-column: 1 / -1;
+
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
 .popular-card-price {
+  justify-self: left;
+  margin: 0;
+
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
 }
 
 .cart-button {
+  justify-self: right;
   min-width: 14px;
   min-height: 14px;
 }
@@ -358,9 +402,19 @@ body {
 }
 
 .advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 32px;
+
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.advantages-item {
+  display: flex;
+  column-gap: 16px;
+  width: 505px;
 }
 
 .advantages-description {
@@ -491,6 +545,7 @@ body {
 
 .delivery-container {
   box-sizing: border-box;
+
   width: 500px;
   margin: 64px;
   margin-left: auto;
@@ -504,14 +559,46 @@ body {
   margin-bottom: 32px;
 }
 
+.delivery-form {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  column-gap: 16px;
+}
+
+.delivery-form p {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+.delivery-form-date,
+.delivery-form-phone {
+  margin-bottom: 20px;
+}
+
+.delivery-form-address {
+  grid-column: 1 / -1;
+
+  margin-bottom: 32px;
+}
+
 .form-label {
+  margin-bottom: 8px;
+
   line-height: 20px;
   font-weight: 700;
 }
 
 .form-text {
+  padding: 14px 16px;
+
   font-size: 16px;
   line-height: 20px;
+}
+
+.delivery-button {
+  grid-column: 1 / -1;
+  justify-self: center;
 }
 
 /* Контакты */
@@ -604,7 +691,6 @@ box-sizing: border-box;
 
 .social-list,
 .info-list {
-  display: flex;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -635,6 +721,10 @@ box-sizing: border-box;
 }
 
 .info-list {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 8px 24px;
+
   width: 356px;
 }
 
@@ -741,9 +831,9 @@ box-sizing: border-box;
 /*Карточки каталога*/
 
 .product-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 40px 30px;
   margin: 0;
   margin-bottom: 16px;
   padding: 0;
@@ -753,13 +843,14 @@ box-sizing: border-box;
 
 .product-card {
   width: 270px;
+  min-height: 332px;
 
   text-align: center;
-
-  background-color: #fcfcfc;
 }
 
 .product-card-link {
+  grid-column: 1 / -1;
+
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -767,7 +858,32 @@ box-sizing: border-box;
   color: #2d3440;
 }
 
+.product-card-image {
+  margin-top: -51px;
+  margin-bottom: 16px;
+
+  border-radius: 50%;
+
+  object-fit: contain;
+}
+
+.product-card-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  }
+
+.product-card-description {
+  grid-column: 1 / -1;
+
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
 .product-card-price {
+  justify-self: left;
+
+  margin: 0;
+
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
