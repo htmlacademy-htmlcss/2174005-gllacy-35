@@ -293,6 +293,9 @@ body {
 }
 
 .popular-card {
+  display: flex;
+  flex-direction: column;
+
   width: 270px;
   min-height: 332px;
 }
@@ -304,8 +307,9 @@ body {
 .card-container {
   box-sizing: border-box;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 
   padding-left: 43px;
   padding-right: 37px;
@@ -316,8 +320,6 @@ body {
 }
 
 .popular-card-link {
-  grid-column: 1 / -1;
-
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -340,17 +342,14 @@ body {
 }
 
 .popular-card-description {
-  grid-column: 1 / -1;
-
   margin-top: 0;
   margin-bottom: 16px;
 }
 
 .card-price-container {
-  grid-column: 1 / -1;
-
   display: flex;
   justify-content: space-between;
+  margin-top: auto;
 }
 
 .popular-card-price {
@@ -847,6 +846,9 @@ box-sizing: border-box;
 }
 
 .product-card {
+  display: flex;
+  flex-direction: column;
+
   width: 270px;
   min-height: 332px;
 
@@ -854,8 +856,6 @@ box-sizing: border-box;
 }
 
 .product-card-link {
-  grid-column: 1 / -1;
-
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -878,14 +878,13 @@ box-sizing: border-box;
   }
 
 .product-card-description {
-  grid-column: 1 / -1;
-
   margin-top: 0;
   margin-bottom: 16px;
 }
 
 .product-card-price {
   margin: 0;
+  margin-top: auto;
 
   font-size: 20px;
   line-height: 24px;
