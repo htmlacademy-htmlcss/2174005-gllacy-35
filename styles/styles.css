@@ -194,6 +194,34 @@ body {
   padding: 0 15px;
 }
 
+/*Разные кнопки*/
+
+.button {
+  display: block;
+  padding: 12px 32px;
+
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+
+  border-radius: 26px;
+
+  cursor: pointer;
+}
+
+.white-button {
+  width: fit-content;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+}
+
+/*.white-button:hover {
+
+}*/
+
+.red-button {
+  outline: 4px solid rgba(255, 47, 100, 0.3);
+}
+
 /*Слайдер*/
 
 .page-container section:not(:last-child) {
@@ -217,21 +245,6 @@ body {
 .best-product-description {
   font-size: 18px;
   line-height: 24px;
-}
-
-.best-product-item-button {
-  width: fit-content;
-}
-
-.button {
-  display: block;
-  padding: 12px 32px;
-
-  line-height: 20px;
-  font-weight: 700;
-  text-align: center;
-
-  border-radius: 26px;
 }
 
 .slider-button {
@@ -326,10 +339,6 @@ body {
 .offer-item p {
   margin: 0;
   margin-bottom: 28px;
-}
-
-.offer-item-button {
-  width: fit-content;
 }
 
 /*Популярное из каталога*/
@@ -483,10 +492,31 @@ body {
   display: flex;
   column-gap: 16px;
   width: 505px;
+
+  background-repeat: no-repeat;
+  background-size: 48px 48px;
+  background-position: top left;
+}
+
+.advantages-item-icecream {
+  background-image: url("../images/icons/ice-cream.svg");
+}
+
+.advantages-item-cow {
+  background-image: url("../images/icons/cow.svg");
+}
+
+.advantages-item-leaf {
+  background-image: url("../images/icons/leaf.svg");
+}
+
+.advantages-item-temp {
+  background-image: url("../images/icons/thermometer.svg");
 }
 
 .advantages-description {
   margin: 0;
+  padding-left: 64px;
 }
 
 /*Статья и подписка*/
@@ -580,6 +610,7 @@ body {
   color: #fcfcfc;
 
   background-color: #ff2f64;
+  border: none;
 }
 
 /* Доставка */
@@ -982,6 +1013,7 @@ box-sizing: border-box;
   font-size: 16px;
 
   background-color: #fcfcfc;
+  border: none;
 }
 
 .pagination-link {
