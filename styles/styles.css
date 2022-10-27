@@ -233,6 +233,21 @@ outline: 4px solid #fcfcfc;
   outline: 4px solid rgba(255, 47, 100, 0.3);
 }
 
+.red-button:hover {
+  color: #2d3440;
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: 4px solid #ff2f64;
+}
+
+.red-button:active {
+  background-color: #feafc3;
+  outline: 2px solid #2d3440;
+}
+
+.red-button:focus-visible {
+  outline: 2px solid #2d3440;
+}
+
 /*Слайдер*/
 
 .page-container section:not(:last-child) {
