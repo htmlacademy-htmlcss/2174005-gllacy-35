@@ -452,6 +452,7 @@ outline: 4px solid #fcfcfc;
 }
 
 .popular-card-price {
+  align-self: center;
   margin: 0;
 
   font-size: 20px;
@@ -850,7 +851,7 @@ box-sizing: border-box;
   margin: 0 auto;
 }
 
-.page-footer-container .socials {
+.socials {
   max-width: 144px;
 }
 
