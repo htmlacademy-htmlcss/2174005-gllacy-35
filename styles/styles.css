@@ -869,12 +869,16 @@ box-sizing: border-box;
 }
 
 .social-list-item a {
+  position: relative;
   display: block;
 
   min-width: 24px;
   min-height: 24px;
 
-  outline: 1px solid black; /*временная обводка, пока не добавлены иконки*/
+  /*background-color: transparent;
+  color: #fcfcfc;
+  fill: currentColor;*/
+  border-radius: 50%;
 }
 
 .social-list-item {
@@ -884,6 +888,18 @@ box-sizing: border-box;
 
 .social-list-item:nth-child(3n) {
   margin: 0;
+}
+
+.social-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: transparent;
+  color: #fcfcfc;
+  fill: currentColor;
 }
 
 .info-list {
