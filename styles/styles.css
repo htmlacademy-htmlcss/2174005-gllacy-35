@@ -137,25 +137,25 @@ body {
 }
 
 .navigation-link:hover {
-  background: rgba(252, 252, 252, 0.5);
+  background-color: rgba(252, 252, 252, 0.5);
 }
 
 .navigation-link:active {
-  background: #fcfcfc;
+  background-color: #fcfcfc;
 }
 
 .navigation-link:focus-visible {
-  background: rgba(252, 252, 252, 0.5);
+  background-color: rgba(252, 252, 252, 0.5);
   outline: 2px solid #2D3440;
 }
 
 .navigation-user .navigation-link:active {
-  background: rgba(252, 252, 252, 0.5);
+  background-color: rgba(252, 252, 252, 0.5);
   outline: 2px solid #2D3440;
 }
 
 .navigation-user .navigation-link:focus-visible {
-  background: #fcfcfc;
+  background-color: #fcfcfc;
   outline: none;
 }
 
@@ -214,9 +214,20 @@ body {
   outline: 4px solid rgba(252, 252, 252, 0.4);
 }
 
-/*.white-button:hover {
+.white-button:hover {
+background-color: rgba(252, 252, 252, 0.4);
+outline: 4px solid #fcfcfc;
+}
 
-}*/
+.white-button:active {
+  background-color: #fcfcfc;
+  outline: 2px solid #2d3440;
+  }
+
+.white-button:focus-visible {
+  background-color: rgba(252, 252, 252, 0.5);
+  outline: 2px solid #2d3440;
+}
 
 .red-button {
   outline: 4px solid rgba(255, 47, 100, 0.3);
@@ -611,6 +622,10 @@ body {
 
   background-color: #ff2f64;
   border: none;
+}
+
+.submit-button {
+  align-self: center;
 }
 
 /* Доставка */
