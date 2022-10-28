@@ -280,13 +280,32 @@ outline: 4px solid #fcfcfc;
   min-height: 38px;
   padding: 0;
 
+  color: #fcfcfc;
   background-color: rgba(252, 252, 252, 0.3);
   border: none;
   border-radius: 26px;
   outline: 2px solid #fcfcfc;
 }
 
+.slider-button:hover {
+  color: #2d3440;
+}
 
+.slider-button:hover:before,
+.slider-button:active:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  background-color: #fcfcfc;
+  border-radius: 50%;
+  outline: none;
+  content: "";
+}
 
 .slider-button-icon {
   position: absolute;
@@ -295,7 +314,7 @@ outline: 4px solid #fcfcfc;
   bottom: 0;
   left: 0;
   margin: auto;
-  fill: #fcfcfc;
+  fill: currentColor;
 }
 
 .slider-prev {
