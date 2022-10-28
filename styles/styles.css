@@ -278,6 +278,7 @@ outline: 4px solid #fcfcfc;
 
   min-width: 38px;
   min-height: 38px;
+  padding: 0;
 
   background-color: rgba(252, 252, 252, 0.3);
   border: none;
@@ -917,13 +918,26 @@ box-sizing: border-box;
   outline: 2px solid rgba(252, 252, 252, 0.3);
 }
 
-.social-list-item a:hover {
+.social-list-item a:hover:before,
+.social-list-item a:active:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 18px;
+  height: 18px;
   background-color: #2d3440;
+  border-radius: 50%;
+  content: "";
+}
+
+.social-list-item a:hover {
   outline: 2px solid rgba(252, 252, 252, 0.5);
 }
 
 .social-list-item a:active {
-  background-color: #2d3440;
   outline: 2px solid rgba(252, 252, 252, 0.5);
   opacity: 0.5;
 }
