@@ -997,14 +997,13 @@ box-sizing: border-box;
   color: #2d3440;
 }
 
-.info-item-link::before {
+.info-item-link {
   padding-left: 25px;
   margin-left: -25px;
   background-image: url("../images/icons/heart.svg");
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: center left;
-  content: "";
 }
 
 .copyright {
