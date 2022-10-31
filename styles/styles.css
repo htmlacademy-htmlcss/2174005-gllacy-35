@@ -289,22 +289,19 @@ outline: 4px solid #fcfcfc;
 
 .slider-button:hover {
   color: #2d3440;
+  background-color: #fcfcfc;
+  outline: 2px solid #fcfcfc;
 }
 
-.slider-button:hover:before,
-.slider-button:active:before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  width: 40px;
-  height: 40px;
-  background-color: #fcfcfc;
-  border-radius: 50%;
-  outline: none;
-  content: "";
+.slider-button:active {
+  color: #2d3440;
+  background-color: rgba(252, 252, 252, 0.5);
+  outline: 2px solid rgba(252, 252, 252, 0.5);
+}
+
+.slider-button:focus-visible {
+  color: #2d3440;
+  outline: 2px solid #2d3440;
 }
 
 .slider-button-icon {
