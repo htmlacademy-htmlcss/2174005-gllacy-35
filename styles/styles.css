@@ -793,6 +793,7 @@ outline: 4px solid #fcfcfc;
 }
 
 .form-label {
+  display: flex;
   margin-bottom: 8px;
 
   line-height: 20px;
@@ -812,7 +813,8 @@ outline: 4px solid #fcfcfc;
 }
 
 .info-icon {
-  vertical-align: baseline;
+  align-self: center;
+  margin-left: 4px;
 }
 
 /* Контакты */
@@ -993,6 +995,16 @@ box-sizing: border-box;
   line-height: 20px;
   text-decoration: none;
   color: #2d3440;
+}
+
+.info-item-link::before {
+  padding-left: 25px;
+  margin-left: -25px;
+  background-image: url("../images/icons/heart.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center left;
+  content: "";
 }
 
 .copyright {
