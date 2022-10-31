@@ -811,6 +811,10 @@ outline: 4px solid #fcfcfc;
   justify-self: center;
 }
 
+.info-icon {
+  vertical-align: baseline;
+}
+
 /* Контакты */
 
 .contacts {
