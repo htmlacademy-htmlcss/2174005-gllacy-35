@@ -289,8 +289,8 @@ outline: 4px solid #fcfcfc;
   left: 0;
   margin: auto;
 
-  width: 300px;
-  height: 300px;
+  width: 312px;
+  height: 312px;
 
   background-color: #ffcbd8;
   border-radius: 50%;
@@ -299,6 +299,7 @@ outline: 4px solid #fcfcfc;
   z-index: -1;
 }
 
+/* Кнопки переключения слайдера */
 
 .slider-button {
   position: relative;
@@ -349,8 +350,13 @@ outline: 4px solid #fcfcfc;
   transform: rotate(-90deg);
 }
 
+
+/* Пагинация слайдера */
+
 .slider-pagination {
   display: flex;
+  flex-wrap: wrap;
+  margin: 0;
   padding: 0;
   list-style-type: none;
 }
@@ -366,6 +372,32 @@ outline: 4px solid #fcfcfc;
 .slider-pagination-button {
   min-width: 12px;
   min-height: 12px;
+  margin: 0;
+  padding: 0;
+
+  background-color: rgba(252, 252, 252, 0.3);
+  border: none;
+  border-radius: 50%;
+  outline: 1px solid rgba(252, 252, 252, 0.3);
+  cursor: pointer;
+}
+
+.slider-pagination-button:hover {
+  outline: 1px solid #fcfcfc;
+}
+
+.slider-pagination-button:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  outline: 1px solid rgba(252, 252, 252, 0.5);
+}
+
+.slider-pagination-button:focus-visible {
+  outline: 1px solid #2d3440;
+}
+
+.slider-pagination-button-current {
+  background-color: #fcfcfc;
+  outline: 1px solid #fcfcfc;
 }
 
 .best-product-item-button,
