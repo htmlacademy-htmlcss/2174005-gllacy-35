@@ -255,6 +255,10 @@ outline: 4px solid #fcfcfc;
   margin-bottom: 80px;
 }
 
+.best-product {
+  position: relative;
+}
+
 .best-product-list {
   width: 1170px;
   margin: 0;
@@ -263,23 +267,51 @@ outline: 4px solid #fcfcfc;
   list-style: none;
 }
 
+.slider-description-container {
+  padding: 136px 0 126px 70px;
+
+  width: 470px;
+}
+
 .best-product-item {
   display: flex;
 }
 
 .best-product-title {
+  margin-top: 0;
+  margin-bottom: 24px;
+
   font-size: 36px;
   line-height: 46px;
   font-weight: 900;
 }
 
 .best-product-description {
+  margin-top: 0;
+  margin-bottom: 48px;
+  width: 430px;
   font-size: 18px;
   line-height: 24px;
 }
 
 .slider-image-container {
   position: relative;
+  align-self: center;
+  margin-right: 41px;
+  width: 100px;
+  height: 150px;
+
+  opacity: 0.4;
+}
+
+.slider-image-container:last-child {
+  margin-right: 0;
+}
+
+.slider-image-container-current {
+  width: 348px;
+  height: 100%;
+  opacity: 1;
 }
 
 .slider-image-container::before {
@@ -290,8 +322,8 @@ outline: 4px solid #fcfcfc;
   left: 0;
   margin: auto;
 
-  width: 312px;
-  height: 312px;
+  width: 100px;
+  height: 100px;
 
   background-color: #ffcbd8;
   border-radius: 50%;
@@ -300,7 +332,31 @@ outline: 4px solid #fcfcfc;
   z-index: -1;
 }
 
+.slider-image-container-current::before {
+  width: 312px;
+  height: 312px;
+}
+
+
+
+.slider-image {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
 /* Кнопки переключения слайдера */
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  transform: translateY(-50%);
+}
 
 .slider-button {
   position: relative;
@@ -344,10 +400,12 @@ outline: 4px solid #fcfcfc;
 }
 
 .slider-prev {
-  transform: rotate(45deg);
+  margin-left: 542px;
+  transform: rotate(90deg);
 }
 
 .slider-next {
+  margin-right: 278px;
   transform: rotate(-90deg);
 }
 
@@ -355,6 +413,10 @@ outline: 4px solid #fcfcfc;
 /* Пагинация слайдера */
 
 .slider-pagination {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -408,6 +470,12 @@ outline: 4px solid #fcfcfc;
 
   background-color: #fcfcfc;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+.best-product .socials {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .title {
