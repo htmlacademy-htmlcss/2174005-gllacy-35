@@ -183,10 +183,15 @@ body {
   display: block;
 }
 
+.navigation-item:first-of-type {
+  position: relative;
+}
+
+
 .navigation-dropdown {
   position: absolute;
-  top: 78px;
-  left: 154px;
+  top: 44px;
+  left: 0;
   z-index: 1;
   box-sizing: border-box;
 
@@ -198,6 +203,7 @@ body {
 
   background-color: #fcfcfc;
   border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
 }
 
 .navigation-dropdown::after {
@@ -225,6 +231,9 @@ body {
   padding: 8px 16px;
 }
 
+.navigation-dropdown-item:nth-child(2) {
+  margin-top: 9px;
+}
 
 .main-container {
   flex-grow: 1;
