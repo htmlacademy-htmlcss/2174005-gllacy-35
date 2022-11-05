@@ -887,9 +887,13 @@ outline: 4px solid #fcfcfc;
 .submit-form input {
   width: 332px;
   height: 48px;
+  padding-left: 16px;
 
   font-size: 16px;
   line-height: 20px;
+
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
 }
 
 .submit-button,
@@ -903,6 +907,7 @@ outline: 4px solid #fcfcfc;
 
 .submit-button {
   align-self: center;
+  margin-left: 24px;
 }
 
 /* Доставка */
@@ -987,6 +992,9 @@ outline: 4px solid #fcfcfc;
 
   font-size: 16px;
   line-height: 20px;
+
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
 }
 
 .delivery-button {
@@ -1279,15 +1287,27 @@ box-sizing: border-box;
 
   background-color:  rgba(252, 252, 252, 0.3);
   list-style-type: none;
+  border-radius: 20px;
 }
 
 .catalog-filter-group {
   margin-right: 24px;
   margin-bottom: 16px;
+  padding: 0;
+
+  border: none;
+}
+
+.catalog-filter-group:last-of-type {
+  margin-bottom: 0;
+}
+
+.catalog-filter-title {
+  margin-bottom: 8px;
 }
 
 .catalog-filter-button {
-  align-self: center;
+  align-self: flex-end;
   padding: 8px 53px;
   font-size: 14px;
   color: #2d3440;
@@ -1308,6 +1328,53 @@ box-sizing: border-box;
 
 .catalog-filter-button:focus-visible {
   outline: 2px solid #2d3440;
+}
+
+
+.catalog-filter-list {
+  padding: 8px 24px;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+/*селект*/
+
+.select-control {
+  box-sizing: border-box;
+  appearance: none;
+  padding: 8px 63px 8px 16px;
+  width: 196px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+
+  background-image: url("../images/icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 12px 6px;
+  background-position: center right 16px;
+
+  border: none;
+  outline: 2px solid rgba(252, 252, 252, 0.3);
+}
+
+.select-control:hover {
+  background-color:  rgba(252, 252, 252, 0.5);
+  outline: 2px solid rgba(252, 252, 252, 0.5);
+}
+
+.select-control:focus {
+  background-color:  rgba(252, 252, 252, 0.4);
+  outline: 2px solid #fcfcfc;
+}
+
+/*радиокнопки*/
+
+.control input[type="radio"] {
+  border: 1px solid #2d3440;
 }
 
 /*Карточки каталога*/
