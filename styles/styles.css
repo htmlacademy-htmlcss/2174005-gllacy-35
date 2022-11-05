@@ -1291,11 +1291,16 @@ box-sizing: border-box;
 }
 
 .catalog-filter-group {
+  margin-left: 0;
   margin-right: 24px;
   margin-bottom: 16px;
   padding: 0;
 
   border: none;
+}
+
+.catalog-filter-group:nth-of-type(3) {
+  margin-right: 0;
 }
 
 .catalog-filter-group:last-of-type {
@@ -1371,7 +1376,54 @@ box-sizing: border-box;
   outline: 2px solid #fcfcfc;
 }
 
+/*диапазон цены*/
+
+input[type="range"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  box-sizing: border-box;
+  width: 196px;
+  margin: 0;
+  padding: 18px 14px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 26px;
+  outline: 2px solid rgba(252, 252, 252, 0.3);
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  border-radius: 10px/100%;
+  height: 2px;
+  background-color: #565c66;
+  border-radius: 5px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  margin-top: -7px;
+
+  border-radius: 50%;
+  background: #2d3440;
+  cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #2d3440;
+  cursor: pointer;
+}
+
 /*радиокнопки*/
+
+.control-input {
+  margin: 0;
+}
 
 .control input[type="radio"] {
   border: 1px solid #2d3440;
