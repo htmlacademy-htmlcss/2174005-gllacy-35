@@ -183,6 +183,19 @@ body {
   display: block;
 }
 
+.navigation-link-catalog:focus-visible {
+  box-sizing: border-box;
+  color: #fcfcfc;
+  background-color: #ff4a78;
+  border: 2px solid #ff4a78;
+  outline: none;
+}
+
+.navigation-link-catalog:focus-visible .navigation-icon {
+  fill: #fcfcfc;
+  transform: rotate(180deg);
+}
+
 .navigation-item:first-of-type {
   position: relative;
 }
@@ -233,6 +246,19 @@ body {
 
 .navigation-dropdown-item:nth-child(2) {
   margin-top: 9px;
+}
+
+.navigation-dropdown-item:hover {
+  background-color: #ffcbd8;
+}
+
+.navigation-dropdown-item:active {
+  background-color: #ff7799;
+}
+
+.navigation-dropdown-item.current a {
+  color: #fcfcfc;
+  background-color: #ff4a78;
 }
 
 .main-container {
