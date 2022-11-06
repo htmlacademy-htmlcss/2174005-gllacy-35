@@ -101,7 +101,17 @@
 
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
-            <input type="range" name="price" min="100" max="500" step="10" value="150">
+            <div class="range">
+              <div class="range-scale">
+                <div class="range-bar" style="left: 24px; width: 56px">
+                  <button class="range-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+              </div>
           </fieldset>
 
           <fieldset class="catalog-filter-group">

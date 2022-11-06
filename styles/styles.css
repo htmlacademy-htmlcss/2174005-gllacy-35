@@ -1002,6 +1002,8 @@ outline: 4px solid #fcfcfc;
   justify-self: center;
 }
 
+/*Тултипы в форме доставки*/
+
 .info-icon {
   align-self: center;
   margin-left: 4px;
@@ -1335,7 +1337,6 @@ box-sizing: border-box;
   outline: 2px solid #2d3440;
 }
 
-
 .catalog-filter-list {
   padding: 8px 24px;
 }
@@ -1378,43 +1379,99 @@ box-sizing: border-box;
 
 /*диапазон цены*/
 
-input[type="range"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
+.range {
   box-sizing: border-box;
   width: 196px;
-  margin: 0;
-  padding: 18px 14px;
+  padding: 17px 14px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 26px;
 }
 
-input[type=range]::-webkit-slider-runnable-track {
+.range-scale {
+  position: relative;
   height: 2px;
-  background-color: #565c66;
+
+  background-color: rgba(86, 92, 102, 0.3);
   border-radius: 5px;
 }
 
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color:rgba(86, 92, 102, 1);
+}
+
+.range-toggle {
+  position: absolute;
   width: 16px;
   height: 16px;
-  margin-top: -7px;
+  padding: 0;
 
+  background-color: #2d3440;
+  border: none;
   border-radius: 50%;
-  background: #2d3440;
   cursor: pointer;
 }
 
-input[type=range]::-moz-range-thumb {
-  width: 16px;
-  height: 16px;
+.range-toggle::after {
+  position: inherit;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  width: 4px;
+  height: 4px;
+
+  background-color: #fcfcfc;
   border-radius: 50%;
-  background: #2d3440;
-  cursor: pointer;
+
+  content: "";
+  z-index: 1;
+}
+
+.range-toggle:hover {
+  background-color: #fcfcfc;
+}
+
+.range-toggle:active {
+  background-color: #2d3440;
+}
+
+
+.range-toggle:focus-visible {
+  background-color: #fcfcfc;
+  outline: 2px solid #2d3440;
+}
+
+.range-toggle:hover::after,
+.range-toggle:focus-visible::after {
+  position: inherit;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  width: 4px;
+  height: 4px;
+
+  background-color: #2d3440;
+  border-radius: 50%;
+
+  content: "";
+  z-index: 1;
+}
+
+.toggle-min {
+  top: -7px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -7px;
+  right: -10px;
 }
 
 /*радиокнопки*/
