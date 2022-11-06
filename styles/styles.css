@@ -1474,15 +1474,61 @@ box-sizing: border-box;
   right: -10px;
 }
 
-/*радиокнопки*/
+/*радиокнопки и чекбоксы*/
 
-.control-input {
-  margin: 0;
+.control {
+  position: relative;
+  display: block;
+  padding-left: 24px;
+}
+.control-mark {
+  box-sizing: border-box;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #2d3440;
+  border-radius: 50%;
 }
 
-.control input[type="radio"] {
-  border: 1px solid #2d3440;
+.control:hover .control-mark {
+  border-color: #fcfcfc;
 }
+
+.control-input:disabled + .control-mark {
+  border-color: #2d3440;
+  opacity: 0.5;
+}
+
+.control-input[type="radio"]:checked + .control-mark::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  width: 6px;
+  height: 6px;
+  background-color: #2d3440;
+  border-radius: 50%;
+  content: "";
+}
+
+.control-input[type="radio"]:checked:hover + .control-mark::after {
+  background-color: #fcfcfc;
+  content: "";
+}
+
+.control-input[type="radio"]:checked:disabled + .control-mark::after {
+  background-color: #2d3440;
+  opacity: 0.5;
+  content: "";
+}
+
+
+
 
 /*Карточки каталога*/
 
