@@ -58,7 +58,24 @@
               </svg>
               Вход
             </a>
+            <div class="popover popover-signup">
+              <div class="popover-content">
+                <h2 class="popover-title">Личный кабинет</h2>
+                <form class="signup-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <label class="visually-hidden" for="login">Логин</label>
+                  <input type="text" id="login" name="login" placeholder="email@example.com">
+                  <label class="visually-hidden" for="password">Пароль</label>
+                  <input type="password" name="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;">
+                  <button class="button red-button" type="submit">Войти</button>
+                </form>
+                <div class="signup-container">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Регистрация</a>
+                </div>
+              </div>
+            </div>
           </li>
+
           <li class="navigation-item">
             <a class="navigation-link navigation-link-cart" href="#">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="15" height="14" viewBox="0 0 15 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -68,9 +85,6 @@
               <span class="visually-hidden">Корзина</span>
             </a>
             <div class="popover popover-cart">
-              <button class="popover-close-button">
-                <span class="visually-hidden">Закрыть</span>
-              </button>
               <div class="popover-content">
                 <h2 class="popover-title">Корзина</h2>
                 <ul class="cart-items-list">
@@ -81,7 +95,7 @@
                       <p class="cart-item-description">1 кг х 310 ₽</p>
                     </div>
                     <p class="cart-item-price">310 ₽</p>
-                    <button type="button" class="cart-item-button">
+                    <button class="cart-item-button" type="button">
                       <span class="visually-hidden">Удалить из корзины</span>
                     </button>
                   </li>
@@ -92,12 +106,19 @@
                       <p class="cart-item-description">1,5 кг х 320 ₽</p>
                     </div>
                     <p class="cart-item-price">480 ₽</p>
-                    <button type="button" class="cart-item-button">
+                    <button class="cart-item-button" type="button">
                       <span class="visually-hidden">Удалить из корзины</span>
                     </button>
                   </li>
                 </ul>
+                <div class="cart-total-container">
+                  <button class="button red-button" type="submit">Оформить заказ</button>
+                  <p class="cart-total">Итого: <span class="cart-total-sum">790 ₽</span></p>
+                </div>
               </div>
+            </div>
+            <div class="popover popover-cart-empty">
+              <p>Ваша корзина пока пуста</p>
             </div>
           </li>
         </ul>
@@ -361,7 +382,7 @@
             <form class="submit-form" action="https://echo.htmlacademy.ru/" method="post">
               <input type="email" name="email" placeholder="email@example.com">
               <button class="submit-button red-button button" type="submit">Отправить</button>
-          </form>
+            </form>
           </div>
         </div>
       </div>
