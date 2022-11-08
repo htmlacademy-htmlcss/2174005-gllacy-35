@@ -349,12 +349,13 @@ outline: 4px solid #fcfcfc;
   background-color: #fcfcfc;
   border-radius: 4px;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+
+  display: none;
 }
 
 .popover-cart {
   width: 441px;
   min-height: 382px;
-  display: none; /*потом переместить в общие стили поповеров*/
 }
 
 .popover-open {
@@ -461,8 +462,6 @@ outline: 4px solid #fcfcfc;
   line-height: 30px;
   font-weight: 700;
   text-align: center;
-
-  display: none; /*потом переместить в общие стили поповеров*/
 }
 
 .popover-cart-empty p {
@@ -474,8 +473,6 @@ outline: 4px solid #fcfcfc;
 .popover-signup {
   width: 420px;
   min-height: 350px;
-
-  display: none; /*потом переместить в общие стили поповеров*/
 }
 
 .popover-signup .popover-content {
@@ -522,6 +519,23 @@ input[type="password"] {
 
 .signup-container a:not(:last-child) {
   margin-bottom: 4px;
+}
+
+/*Поповер поиска*/
+
+.popover-search {
+  padding: 24px 16px;
+}
+
+.popover-search input {
+  box-sizing: border-box;
+  width: 356px;
+  min-height: 48px;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
 }
 
 
