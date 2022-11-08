@@ -549,6 +549,24 @@ input[type="password"] {
   border-radius: 4px;
 }
 
+input[type="search"]::-webkit-search-cancel-button {
+  appearance: none;
+
+  width: 16px;
+  height: 16px;
+  margin: auto;
+  margin-right: 13px;
+  padding: 0;
+
+  background-color: #ffffff;
+  background-image: url("../images/icons/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px 10px;
+
+  opacity: 0.4;
+}
+
 /*Формы. Общие стили состояний*/
 
 .field:hover {
