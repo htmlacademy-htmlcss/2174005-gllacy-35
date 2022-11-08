@@ -436,6 +436,14 @@ outline: 4px solid #fcfcfc;
   width: 16px;
   height: 16px;
   margin: auto 0;
+  padding: 0;
+
+  background-color: #fcfcfc;
+  border: none;
+  background-image: url("../images/icons/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px 10px;
 }
 
 .cart-item:last-child::after {
@@ -539,6 +547,12 @@ input[type="password"] {
   line-height: 20px;
   border: 1px solid #b9b9b9;
   border-radius: 4px;
+}
+
+/*Формы. Общие стили состояний*/
+
+.field:hover {
+  border: 1px solid #2d3440;
 }
 
 
@@ -1529,7 +1543,6 @@ box-sizing: border-box;
   resize: none;
 
   font-family: "Inter", sans-serif;
-  color: #2d3440;
 }
 
 .feedback-form-button {

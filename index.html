@@ -53,7 +53,7 @@
             <div class="popover popover-search">
               <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="visually-hidden" for="search">Поиск</label>
-                <input type="search" id="search" name="search" placeholder="Поиск по сайту">
+                <input class="field" type="search" id="search" name="search" placeholder="Поиск по сайту">
               </form>
             </div>
           </li>
@@ -69,9 +69,9 @@
                 <h2 class="popover-title">Личный кабинет</h2>
                 <form class="signup-form" action="https://echo.htmlacademy.ru/" method="post">
                   <label class="visually-hidden" for="login">Логин</label>
-                  <input type="text" id="login" name="login" placeholder="email@example.com">
+                  <input class="field" type="text" id="login" name="login" placeholder="email@example.com">
                   <label class="visually-hidden" for="password">Пароль</label>
-                  <input type="password" name="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;">
+                  <input class="field" type="password" name="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;">
                   <button class="button red-button" type="submit">Войти</button>
                 </form>
                 <div class="signup-container">
@@ -386,7 +386,7 @@
             в курсе всего самого вкусного, что у нас происходит.
             Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="submit-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input type="email" name="email" placeholder="email@example.com">
+              <input class="field" type="email" name="email" placeholder="email@example.com">
               <button class="submit-button red-button button" type="submit">Отправить</button>
             </form>
           </div>
@@ -410,11 +410,11 @@
                 </svg>
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
               </label>
-              <input class="form-text" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
+              <input class="form-text field" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
             </p>
             <p class="delivery-form-phone">
               <label class="form-label" for="delivery-phone">Телефон</label>
-              <input class="form-text" type="tel" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
+              <input class="form-text field" type="tel" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
             </p>
             <p class="delivery-form-address">
               <label class="form-label" for="delivery-address">Адрес
@@ -423,7 +423,7 @@
                 </svg>
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
               </label>
-              <input class="form-text" type="text" id="delivery-address" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
+              <input class="form-text field" type="text" id="delivery-address" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
             </p>
 
             <button class="delivery-button red-button button" type="submit">Отправить</button>
@@ -504,15 +504,15 @@
         <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="field-group">
             <label class="visually-hidden" for="name">Имя и фамилия</label>
-            <input type="text" id="name" name="name" placeholder="Имя и фамилия">
+            <input class="field" type="text" id="name" name="name" placeholder="Имя и фамилия">
           </p>
           <p class="field-group">
             <label class="visually-hidden" for="email">Электронная почта</label>
-            <input type="email" id="email" name="email" placeholder="email@example.com">
+            <input class="field" type="email" id="email" name="email" placeholder="email@example.com">
           </p>
           <p class="field-group">
             <label class="visually-hidden" for="comment">Электронная почта</label>
-            <textarea rows="6" cols="45" id="comment" name="comment" placeholder="В свободной форме"></textarea>
+            <textarea class="field" rows="6" cols="45" id="comment" name="comment" placeholder="В свободной форме"></textarea>
           </p>
           <button class="button red-button feedback-form-button" type="submit">Отправить</button>
         </form>
