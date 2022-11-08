@@ -1245,8 +1245,11 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .form-label {
-  display: flex;
+  position: relative;
+
+  align-self: flex-start;
   margin-bottom: 8px;
+  padding-right: 18px;
 
   line-height: 20px;
   font-weight: 700;
@@ -1269,9 +1272,20 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /*Тултипы в форме доставки*/
 
-.info-icon {
-  align-self: center;
+label:not(.form-label-phone):after {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  margin-top: 3px;
   margin-left: 4px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  background-image: url("../images/icons/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  content: "";
 }
 
 /* Контакты */
