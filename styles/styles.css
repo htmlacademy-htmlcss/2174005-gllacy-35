@@ -1295,7 +1295,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .tooltip-text {
   position: absolute;
   top: 100%;
-  transform: translateY(-26px);
+  transform: translateY(-23px);
   z-index: 1;
 
   display: none;
@@ -1324,14 +1324,17 @@ input[type="search"]::-webkit-search-cancel-button {
   position:absolute;
   right: 100%;
   top: 11px;
-  width: 7px;
-  height: 14px;
-
-
+  left: -4px;
+  width: 6px;
+  height: 6px;
   margin-bottom: auto;
-  background-image: url("../images/icons/tooltip-arrow.svg");
-  background-repeat: no-repeat;
-  background-size: 7px 14px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffffff #ffffff #b9b9b9 #b9b9b9;
+
   content:'';
 }
 
