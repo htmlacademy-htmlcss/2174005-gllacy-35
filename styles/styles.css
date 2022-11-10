@@ -593,6 +593,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .slider {
   position: relative;
   min-height: 547px;
+
 }
 
 .slider-list {
@@ -854,16 +855,15 @@ input[type="search"]::-webkit-search-cancel-button {
 .offer-title {
   width: 434px;
   margin-top: 0;
-  margin-bottom: 55px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 52px;
+  margin-left: 362px;
   text-align: center;
 }
 
 
 .offer-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
 
@@ -872,18 +872,19 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .offer-item {
   box-sizing: border-box;
-  width: 570px;
-  min-height: 268px;
-  padding: 36px;
-  padding-right: 206px;
+  width: 563px;
+  min-height: 263px;
+  padding: 36px 206px 31px 37px;
 
   background-color: #ff7799;
   background-repeat: no-repeat;
   background-position: right bottom;
+  background-size: 219px 268px;
   border-radius: 16px;
 }
 
 .offer-item-raspberry {
+  margin-right: 28px;
   background-image: url("../images/offer-raspberry.png");
 }
 
@@ -893,7 +894,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .offer-item-title {
   margin-top: 0;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
 
   font-size: 24px;
   line-height: 30px;
@@ -902,7 +903,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .offer-item p {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 }
 
 /*Популярное из каталога*/
