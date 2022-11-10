@@ -41,6 +41,14 @@ body {
   background-color: #feafc3;
 }
 
+.blue-theme {
+  background-color: #69a9ff;
+}
+
+.yellow-theme {
+  background-color: #fcc850;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -580,11 +588,12 @@ input[type="search"]::-webkit-search-cancel-button {
   margin-bottom: 80px;
 }
 
-.best-product {
+.slider {
   position: relative;
 }
 
-.best-product-list {
+.slider-list {
+  display: flex;
   width: 1170px;
   margin: 0;
   padding: 0;
@@ -592,14 +601,19 @@ input[type="search"]::-webkit-search-cancel-button {
   list-style: none;
 }
 
+.slider-item {
+  display: flex;
+}
+
 .slider-description-container {
+  display: none;
   padding: 136px 0 126px 70px;
 
   width: 470px;
 }
 
-.best-product-item {
-  display: flex;
+.slider-description-container-current {
+  display: block;
 }
 
 .best-product-title {
@@ -672,11 +686,15 @@ input[type="search"]::-webkit-search-cancel-button {
   object-fit: contain;
 }
 
+.slider-image-container-current .slider-image {
+  max-height: 507px;
+}
+
 /* Кнопки переключения слайдера */
 
 .slider-controls {
   position: absolute;
-  top: 50%;
+  top: 48%;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -725,12 +743,12 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .slider-prev {
-  margin-left: 542px;
+  margin-left: 540px;
   transform: rotate(90deg);
 }
 
 .slider-next {
-  margin-right: 278px;
+  margin-right: 284px;
   transform: rotate(-90deg);
 }
 
@@ -797,7 +815,7 @@ input[type="search"]::-webkit-search-cancel-button {
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
-.best-product .socials {
+.slider .socials {
   position: absolute;
   right: 0;
   bottom: 0;
