@@ -70,7 +70,7 @@
                   <label class="visually-hidden" for="login">Логин</label>
                   <input type="text" id="login" name="login" placeholder="email@example.com">
                   <label class="visually-hidden" for="password">Пароль</label>
-                  <input type="password" name="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;">
+                  <input type="password" id="password" name="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;">
                   <button class="button red-button" type="submit">Войти</button>
                 </form>
                 <div class="signup-container">
@@ -171,6 +171,7 @@
                   </button>
                 </div>
               </div>
+            </div>
           </fieldset>
 
           <fieldset class="catalog-filter-group">
@@ -297,7 +298,7 @@
                 <img class="product-card-image" src="images/catalog/catalog-blueberry.jpg" width="168" height="168" alt="Шарик мороженого Черника">
                 <h3 class="product-card-title">Черника</h3>
               </a>
-              <p class="product-card-description">Крем-брюле с черничным джемом</p>
+              <p class="product-card-description">Крем-брюле<br>с черничным джемом</p>
               <div class="card-price-container">
                 <p class="product-card-price">330 ₽<span class="product-card-weight">/кг</span></p>
                 <button class="cart-button" type="submit">
@@ -317,7 +318,7 @@
                 <img class="product-card-image" src="images/catalog/catalog-bubblegum.jpg" width="168" height="168" alt="Шарик мороженого Бабл-гам">
                 <h3 class="product-card-title">Бабл-гам</h3>
               </a>
-              <p class="product-card-description">Ванильный пломбир со сладкой посыпкой</p>
+              <p class="product-card-description">Ванильный пломбир<br>со сладкой посыпкой</p>
               <div class="card-price-container">
                 <p class="product-card-price">320 ₽<span class="product-card-weight">/кг</span></p>
                 <button class="cart-button" type="submit">
@@ -357,7 +358,7 @@
                 <img class="product-card-image" src="images/catalog/catalog-banana.jpg" width="168" height="168" alt="Шарик мороженого Банан">
                 <h3 class="product-card-title">Банан</h3>
               </a>
-              <p class="product-card-description">Сливочный пломбир с банановым вкусом</p>
+              <p class="product-card-description">Сливочный пломбир<br>с банановым вкусом</p>
               <div class="card-price-container">
                 <p class="product-card-price">340 ₽<span class="product-card-weight">/кг</span></p>
                 <button class="cart-button" type="submit">
@@ -397,7 +398,7 @@
                 <img class="product-card-image" src="images/catalog/catalog-strawberry.jpg" width="168" height="168" alt="Шарик мороженого Клубничка">
                 <h3 class="product-card-title">Клубничка</h3>
               </a>
-              <p class="product-card-description">Сливочный пломбир с клубничным вкусом</p>
+              <p class="product-card-description">Сливочный пломбир<br>с клубничным вкусом</p>
               <div class="card-price-container">
                 <p class="product-card-price">300 ₽<span class="product-card-weight">/кг</span></p>
                 <button class="cart-button" type="submit">
@@ -437,7 +438,7 @@
                 <img class="product-card-image" src="images/catalog/catalog-menthol.jpg" width="168" height="168" alt="Шарик мороженого Ментол">
                 <h3 class="product-card-title">Ментол</h3>
               </a>
-              <p class="product-card-description">Сливочный пломбир с ментоловым сиропом</p>
+              <p class="product-card-description">Сливочный пломбир<br>с ментоловым сиропом</p>
               <div class="card-price-container">
                 <p class="product-card-price">320 ₽<span class="product-card-weight">/кг</span></p>
                 <button class="cart-button" type="submit">
@@ -496,7 +497,7 @@
 
           <ul class="pagination">
             <li class="pagination-item">
-              <a class="pagination-link pagination-prev" href="#" disabled>
+              <a class="pagination-link pagination-prev disabled" href="#">
                 <svg class="pagination-icon" aria-hidden="true" focusable="false" width="12" height="7" viewBox="0 0 12 7" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.80812 1.0532c-.26035-.26035-.68246-.26035-.94281 0-.26035.26035-.26035.68246 0 .94281l4.66034 4.66035a.74088.74088 0 0 0 .00624.00632c.1307.13069.30215.19578.47345.19526.16996-.0005.33977-.06558.46944-.19526a.61255.61255 0 0 0 .00621-.00629l4.66041-4.66038c.2603-.26035.2603-.68246 0-.94281-.2604-.26035-.6825-.26035-.9428 0L6.00334 5.24842 1.80812 1.0532Z"/>
                 </svg>

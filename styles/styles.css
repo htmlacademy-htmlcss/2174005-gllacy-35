@@ -71,7 +71,6 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   width: 431px;
   margin: 0;
   padding: 0;
@@ -81,7 +80,7 @@ body {
 
 .navigation .logo {
   display: block;
-  margin-right: 16px;
+  margin-right: 14px;
   padding: 0;
 }
 
@@ -99,25 +98,28 @@ body {
   border-radius: 30px;
 }
 
-/*.navigation-list:first-of-type .navigation-link {
-  padding: 6px;
-}*/
-
 .navigation-link-catalog {
   padding-right: 38px;
 }
 
 .navigation-link-catalog .navigation-icon {
-  right: 16px;
+  right: 18px;
   left: auto;
   margin: auto 0;
 }
 
 .navigation-user {
-  justify-content: space-between;
+  justify-content: flex-end;
+  width: auto;
   margin-left: auto;
 
   font-size: 14px;
+}
+
+.navigation-user .navigation-item {
+  margin-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 8px;
 }
 
 .navigation-user .navigation-link {
@@ -279,7 +281,6 @@ body {
 .page-container {
   width: 1170px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 /*Разные кнопки*/
@@ -346,6 +347,7 @@ outline: 4px solid #fcfcfc;
 
 .navigation-item {
   position: relative;
+  padding: 10px 0;
 }
 
 .popover {
@@ -590,6 +592,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .slider {
   position: relative;
+  min-height: 547px;
 }
 
 .slider-list {
@@ -607,36 +610,42 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .slider-description-container {
   display: none;
-  padding: 136px 0 126px 70px;
+  padding: 128px 37px 126px 68px;
 
-  width: 470px;
+  max-width: 429px;
 }
 
 .slider-description-container-current {
   display: block;
 }
 
-.best-product-title {
+.slider-product-title {
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 
   font-size: 36px;
   line-height: 46px;
   font-weight: 900;
 }
 
-.best-product-description {
+.slider-product-description {
   margin-top: 0;
-  margin-bottom: 48px;
+  margin-bottom: 45px;
   width: 430px;
   font-size: 18px;
   line-height: 24px;
 }
 
+.slider-product-item-button {
+  margin-left: 2px;
+}
+
+/*Изображения в слайдере*/
+
 .slider-image-container {
   position: relative;
   align-self: center;
-  margin-right: 41px;
+
   width: 100px;
   height: 150px;
 
@@ -650,6 +659,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .slider-image-container-current {
   width: 348px;
   height: 100%;
+  margin-right: 34px;
   opacity: 1;
 }
 
@@ -660,9 +670,9 @@ input[type="search"]::-webkit-search-cancel-button {
   bottom: 0;
   left: 0;
   margin: auto;
-
-  width: 100px;
-  height: 100px;
+  margin-top: 31px;
+  width: 97px;
+  height: 97px;
 
   background-color: #ffcbd8;
   border-radius: 50%;
@@ -672,8 +682,11 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .slider-image-container-current::before {
-  width: 312px;
-  height: 312px;
+    width: 308px;
+    height: 308px;
+    margin: auto;
+    margin-bottom: 109px;
+    margin-left: 19px;
 }
 
 
@@ -682,19 +695,28 @@ input[type="search"]::-webkit-search-cancel-button {
   display: block;
   margin: auto;
   max-width: 100%;
-  height: auto;
   object-fit: contain;
+}
+
+.slider-image-container:not(.slider-image-container-current) .slider-image {
+  height: 150px;
+  margin-top: 3px;
 }
 
 .slider-image-container-current .slider-image {
   max-height: 507px;
+  margin-top: 11px;
+}
+
+.slider-image-container:nth-child(2) {
+  margin-right: 38px;
 }
 
 /* Кнопки переключения слайдера */
 
 .slider-controls {
   position: absolute;
-  top: 48%;
+  top: 49%;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -704,8 +726,8 @@ input[type="search"]::-webkit-search-cancel-button {
 .slider-button {
   position: relative;
 
-  min-width: 38px;
-  min-height: 38px;
+  min-width: 34px;
+  min-height: 34px;
   padding: 0;
 
   color: #fcfcfc;
@@ -743,12 +765,12 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .slider-prev {
-  margin-left: 540px;
+  margin-left: 536px;
   transform: rotate(90deg);
 }
 
 .slider-next {
-  margin-right: 284px;
+  margin-right: 291px;
   transform: rotate(-90deg);
 }
 
@@ -757,8 +779,8 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .slider-pagination {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 8px;
+  left: 2px;
 
   display: flex;
   flex-wrap: wrap;
@@ -768,7 +790,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .slider-pagination-item {
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .slider-pagination-item:last-child {
@@ -776,8 +798,8 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .slider-pagination-button {
-  min-width: 12px;
-  min-height: 12px;
+  min-width: 10px;
+  min-height: 10px;
   margin: 0;
   padding: 0;
 
@@ -806,7 +828,7 @@ input[type="search"]::-webkit-search-cancel-button {
   outline: 1px solid #fcfcfc;
 }
 
-.best-product-item-button,
+.slider-product-item-button,
 .offer-item-button {
   text-decoration: none;
   color: #2d3440;
@@ -817,7 +839,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .slider .socials {
   position: absolute;
-  right: 0;
+  right: 16px;
   bottom: 0;
 }
 
@@ -935,7 +957,6 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .popular-card-link {
-  font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   text-decoration: none;
@@ -955,6 +976,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .popular-card-title {
   margin-top: 0;
   margin-bottom: 8px;
+  font-size: 20px;
 }
 
 .popular-card-description {
@@ -2012,7 +2034,6 @@ box-sizing: border-box;
 }
 
 .product-card-link {
-  font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   text-decoration: none;
@@ -2032,6 +2053,7 @@ box-sizing: border-box;
 .product-card-title {
   margin-top: 0;
   margin-bottom: 8px;
+  font-size: 20px;
   }
 
 .product-card-description {
@@ -2145,6 +2167,7 @@ padding: 2px 7px;
   transform: rotate(-90deg);
 }
 
-.pagination-prev[disabled] {
+a.disabled {
+  pointer-events: none;
   opacity: 0.3;
 }
