@@ -1698,12 +1698,12 @@ input[type="search"]::-webkit-search-cancel-button {
 /* -----------------------------Каталог---------------------------- */
 
 .main-inner {
-  padding-top: 32px;
+  padding-top: 24px;
 }
 
 .inner-header-title {
-  margin-top: 16px;
-  margin-bottom: 40px;
+  margin-top: 17px;
+  margin-bottom: 39px;
 
   font-size: 32px;
   line-height: 46px;
@@ -1724,13 +1724,17 @@ input[type="search"]::-webkit-search-cancel-button {
   list-style-type: none;
 }
 
+.breadcrumbs-item:not(:last-of-type) {
+  margin-right: 9px;
+}
+
 .breadcrumbs-item:not(:last-of-type):after {
-  padding: 7px 11px;
+  padding: 7px 10px;
 
   background-image: url("../images/icons/double-arrow.svg");
-  background-position: center;
+  background-position: right center;
   background-repeat: no-repeat;
-  background-size: 6px 6px;
+  background-size: 8px 8px;
 
   content: "";
 }
@@ -1755,7 +1759,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
-  width: 823px;
+  width: 830px;
   margin-bottom: 44px;
 
   font-size: 14px;
@@ -1786,15 +1790,18 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .catalog-filter-group:last-of-type {
+  margin-right: 18px;
   margin-bottom: 0;
 }
 
 .catalog-filter-title {
   margin-bottom: 8px;
+  padding-left: 16px;
 }
 
 .catalog-filter-button {
   align-self: flex-end;
+  margin-bottom: 2px;
   padding: 8px 53px;
   font-size: 14px;
   color: #2d3440;
@@ -1818,7 +1825,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .catalog-filter-list {
-  padding: 8px 24px;
+  padding: 8px 25px;
 }
 
 .catalog-filter-item:not(:last-child) {
@@ -1830,7 +1837,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .select-control {
   box-sizing: border-box;
   appearance: none;
-  padding: 6px 59px 6px 16px;
+  padding: 6px 59px 6px 14px;
   width: 196px;
 
   font-family: "Inter", sans-serif;
@@ -1840,7 +1847,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
   background-image: url("../images/icons/arrow.svg");
   background-repeat: no-repeat;
-  background-size: 12px 6px;
+  background-size: 12px 7px;
   background-position: center right 13px;
 
 
@@ -1946,12 +1953,12 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .toggle-min {
   top: -7px;
-  left: -10px;
+  left: 2px;
 }
 
 .toggle-max {
   top: -7px;
-  right: -10px;
+  right: -6px;
 }
 
 /*радиокнопки и чекбоксы*/
@@ -1968,7 +1975,8 @@ input[type="search"]::-webkit-search-cancel-button {
   left: 0;
   width: 16px;
   height: 16px;
-  border: 1.5px solid #2d3440;
+  border: 1px solid #2d3440;
+  border-width: thin;
   border-radius: 50%;
 }
 
@@ -2008,7 +2016,11 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .fillings {
-  padding: 9px 24px;
+  padding: 10px 24px;
+}
+
+.fillings .catalog-filter-item:not(:last-child) {
+  margin-right: 17px;
 }
 
 .control-mark-checkbox {
@@ -2065,7 +2077,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .product-card-image {
   margin-top: -51px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 50%;
@@ -2081,12 +2093,11 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .product-card-description {
   margin-top: 0;
-  margin-bottom: 16px;
 }
 
 .product-card-price {
+  align-self: center;
   margin: 0;
-  margin-top: auto;
 
   font-size: 20px;
   line-height: 24px;
