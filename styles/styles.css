@@ -29,6 +29,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  min-width: 1366px;
   min-height: 100%;
   margin: 0;
 
