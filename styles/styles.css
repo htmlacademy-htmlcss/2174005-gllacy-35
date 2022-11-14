@@ -1046,37 +1046,39 @@ input[type="search"]::-webkit-search-cancel-button {
 /*Преимущества*/
 
 .advantages {
+  box-sizing: border-box;
   position: relative;
 
-  width: 1170px;
-  min-height: 480px;
-  margin-bottom: 80px;
-
-  background: url("../images/waffle.png") repeat;
-  border-radius: 16px;
-}
-
-.advantages-wrapper,
-.article,
-.submit-wrapper  {
-  background-color: #ffffff;
-}
-
-.advantages-wrapper {
-  box-sizing: border-box;
-  position: absolute;
-  top: 24px;
-  left: 24px;
-  right: 24px;
-  bottom: 24px;
-
   width: 1122px;
-  min-height: 426px;
+  height: 100%;
+  margin: 0 auto;
+  margin-bottom: 80px;
   padding: 57px 40px;
   padding-right: 33px;
 
   background-color: #f8f7f4;
   border-radius: 16px;
+}
+
+.advantages::before {
+  position: absolute;
+  top: -24px;
+  left: -24px;
+  right: -24px;
+  bottom: -24px;
+
+  width: 1170px;
+  min-height: 474px;
+  background: url("../images/waffle.png") repeat;
+  border-radius: 16px;
+  content: "";
+  z-index: -1;
+}
+
+
+.article,
+.submit-wrapper  {
+  background-color: #ffffff;
 }
 
 .advantages-title {
