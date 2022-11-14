@@ -1069,16 +1069,12 @@ input[type="search"]::-webkit-search-cancel-button {
 
   width: 1170px;
   min-height: 474px;
-  background: url("../images/waffle.png") repeat;
+  background-color: #f8f7f4;
+  background-image: url("../images/waffle.png");
+  background-repeat: repeat;
   border-radius: 16px;
   content: "";
   z-index: -1;
-}
-
-
-.article,
-.submit-wrapper  {
-  background-color: #ffffff;
 }
 
 .advantages-title {
@@ -1132,6 +1128,11 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /*Статья и подписка*/
 
+.article,
+.submit-wrapper  {
+  background-color: #f8f7f4;
+}
+
 .article-container {
   display: flex;
   justify-content: space-between;
@@ -1143,13 +1144,14 @@ input[type="search"]::-webkit-search-cancel-button {
 .article {
   box-sizing: border-box;
   width: 570px;
-  max-height: 224px;
+  min-height: 224px;
   padding-top: 32px;
   padding-left: 32px;
 
-  background: url("../images/article.jpg") no-repeat;
-  background-size: 114% auto;
+  background-image: url("../images/article.jpg");
   background-position: -5px -105px;
+  background-repeat: no-repeat;
+  background-size: 114% auto;
   border-radius: 16px;
 }
 
@@ -1170,18 +1172,19 @@ input[type="search"]::-webkit-search-cancel-button {
   line-height: 30px;
   font-weight: 700;
   text-decoration: none;
-  color: #2D3440;
+  color: #2d3440;
 }
 
 .submit-container {
   position: relative;
 
   width: 570px;
-  max-height: 224px;
+  min-height: 224px;
 
-  background: url("../images/post.png") no-repeat;
-  background-size: cover;
+  background-image: url("../images/post.png");
   background-position: -5px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 16px;
 }
 
