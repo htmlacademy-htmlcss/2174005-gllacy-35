@@ -218,7 +218,7 @@ body {
 .navigation-dropdown {
   position: absolute;
   top: 54px;
-  left: 0;
+  left: 1px;
   z-index: 1;
   box-sizing: border-box;
 
@@ -226,6 +226,7 @@ body {
   width: 135px;
   margin: 0;
   padding: 0;
+  padding-bottom: 8px;
   list-style-type: none;
 
   background-color: #fcfcfc;
@@ -247,7 +248,7 @@ body {
 
 .navigation-dropdown-item a {
   display: block;
-  padding: 1px 12px 11px 16px;
+  padding: 6px 12px 6px 16px;
 
   font-size: 14px;
   line-height: 20px;
@@ -262,7 +263,7 @@ body {
 }
 
 .navigation-dropdown-item:nth-child(2) {
-  margin-top: 9px;
+  margin-top: 4px;
 }
 
 .navigation-dropdown-item:hover {
@@ -596,7 +597,6 @@ input[type="search"]::-webkit-search-cancel-button {
 .field:hover {
   border: 1px solid #2d3440;
 }
-
 
 /*Слайдер*/
 
@@ -1147,11 +1147,6 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /*Статья и подписка*/
 
-.article,
-.submit-wrapper  {
-  background-color: #f8f7f4;
-}
-
 .article-container {
   display: flex;
   justify-content: space-between;
@@ -1167,6 +1162,7 @@ input[type="search"]::-webkit-search-cancel-button {
   padding-top: 32px;
   padding-left: 32px;
 
+  background-color: #f8f7f4;
   background-image: url("../images/article.jpg");
   background-position: -5px -105px;
   background-repeat: no-repeat;
@@ -1196,31 +1192,39 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .submit-container {
+  box-sizing: border-box;
   position: relative;
+
+  width: 558px;
+  height: 100%;
+  margin-top: 6px;
+  margin-right: 6px;
+  padding: 26px;
+  padding-bottom: 28px;
+  background-color: #f8f7f4;
+  border-radius: 16px;
+}
+
+.submit-container::before {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
 
   width: 570px;
   min-height: 224px;
-
+  background-color: #f8f7f4;
   background-image: url("../images/post.png");
   background-position: -5px 0;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px;
+  content: "";
+  z-index: -1;
 }
 
-.submit-wrapper {
-  position: absolute;
-  top: 6px;
-  left: 6px;
-  right: 6px;
-  bottom: 6px;
-
-  width: 506px;
-  padding: 26px;
-  border-radius: 16px;
-}
-
-.submit-wrapper p {
+.submit-container p {
   margin-top: 0;
   margin-bottom: 44px;
   color: #565c66;
@@ -1246,7 +1250,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .submit-button {
   align-self: center;
   margin-left: 18px;
-  margin-right: 6px;
+  margin-right: 4px;
 }
 
 /* Доставка */
