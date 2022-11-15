@@ -926,14 +926,14 @@ input[type="search"]::-webkit-search-cancel-button {
 /*Популярное из каталога*/
 
 .popular {
-  margin-bottom: 80px;
+  margin-bottom: 104px;
   text-align: center;
 }
 
 .popular-title {
   width: 527px;
   margin-top: 0;
-  margin-bottom: 55px;
+  margin-bottom: 106px;
   margin-left: 320px;
 }
 
@@ -948,29 +948,31 @@ input[type="search"]::-webkit-search-cancel-button {
   list-style-type: none;
 }
 
-.popular-card {
-  display: flex;
-  flex-direction: column;
-
-  width: 270px;
-  min-height: 332px;
-}
-
-.transparent-container {
-  min-height: 51px;
-}
-
-.card-container {
+.popular-card,
+.product-card {
   box-sizing: border-box;
+  position: relative;
 
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 
+  width: 270px;
+  min-height: 281px;
   padding: 0 38px 24px;
 
   background-color: #fcfcfc;
   border-radius: 8px;
+}
+
+.popular-card::before,
+.product-card::before {
+  position: absolute;
+  top: -51px;
+  left: 0;
+  width: 270px;
+  min-height: 51px;
+  content: "";
 }
 
 .popular-card-link {
@@ -1799,7 +1801,7 @@ input[type="search"]::-webkit-search-cancel-button {
   display: flex;
   flex-wrap: wrap;
   width: 830px;
-  margin-bottom: 44px;
+  margin-bottom: 96px;
 
   font-size: 14px;
   line-height: 20px;
@@ -2107,7 +2109,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .product-list {
   display: grid;
   grid-template-columns: repeat(4, 270px);
-  gap: 40px 30px;
+  gap: 91px 30px;
   margin: 0;
   margin-bottom: 16px;
   padding: 0;
@@ -2116,12 +2118,6 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .product-card {
-  display: flex;
-  flex-direction: column;
-
-  width: 270px;
-  min-height: 332px;
-
   text-align: center;
 }
 
