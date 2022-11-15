@@ -70,9 +70,9 @@
                 <h2 class="popover-title">Личный кабинет</h2>
                 <form class="signup-form" action="https://echo.htmlacademy.ru/" method="post">
                   <label class="visually-hidden" for="login">Логин</label>
-                  <input type="text" id="login" name="login" placeholder="email@example.com">
+                  <input type="text" id="login" name="login" placeholder="email@example.com" required>
                   <label class="visually-hidden" for="password">Пароль</label>
-                  <input type="password" id="password" name="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;">
+                  <input type="password" id="password" name="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;" required>
                   <button class="button red-button" type="submit">Войти</button>
                 </form>
                 <div class="signup-container">
@@ -156,7 +156,7 @@
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Сортировка:</legend>
             <select class="select-control filter" name="sorting">
-              <option value="product">по популярности</option>
+              <option value="popular">по популярности</option>
             </select>
           </fieldset>
 

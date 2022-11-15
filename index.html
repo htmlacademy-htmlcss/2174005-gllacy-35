@@ -71,9 +71,9 @@
                 <h2 class="popover-title">Личный кабинет</h2>
                 <form class="signup-form" action="https://echo.htmlacademy.ru/" method="post">
                   <label class="visually-hidden">Логин</label>
-                  <input class="field" type="text" name="login" placeholder="email@example.com">
+                  <input class="field" type="text" name="login" placeholder="email@example.com" required>
                   <label class="visually-hidden">Пароль</label>
-                  <input class="field" type="password" name="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;">
+                  <input class="field" type="password" name="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;" required>
                   <button class="button red-button" type="submit">Войти</button>
                 </form>
                 <div class="signup-container">
@@ -380,7 +380,7 @@
             <p>Подпишитесь на нашу сладкую рассылку и будьте всегда<br>в курсе всего самого вкусного, что у нас происходит.
             Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="submit-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="field" type="email" name="email" placeholder="email@example.com">
+              <input class="field" type="email" name="email" placeholder="email@example.com" required>
               <button class="submit-button red-button button" type="submit">Отправить</button>
             </form>
           </div>
@@ -399,7 +399,7 @@
           <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="delivery-form-date">
               <span class="form-label">
-                <label class="form-label" for="delivery-date">Дата</label>
+                <label for="delivery-date">Дата</label>
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
                     <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -409,15 +409,15 @@
                   <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите желаемую дату доставки</span>
                 </span>
               </span>
-              <input class="form-text field" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
+              <input class="form-text field" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}"  required >
             </p>
             <p class="delivery-form-phone">
               <label class="form-label" for="delivery-phone">Телефон</label>
-              <input class="form-text field" type="tel" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
+              <input class="form-text field" type="tel" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00" pattern="^\+\d{1}\d{3}\d{7}$" required>
             </p>
             <p class="delivery-form-address">
               <span class="form-label">
-                <label class="form-label" for="delivery-address">Адрес</label>
+                <label for="delivery-address">Адрес</label>
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
                     <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -427,7 +427,7 @@
                   <span class="tooltip-text" role="tooltip" id="tooltip-label-address">Введите название улицы, дома и квартиры</span>
                 </span>
               </span>
-              <input class="form-text field" type="text" id="delivery-address" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
+              <input class="form-text field" type="text" id="delivery-address" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8" pattern="[А-Яа-яЁё]{6,}" required>
             </p>
 
             <button class="delivery-button red-button button" type="submit">Отправить</button>
@@ -507,14 +507,14 @@
         <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="field-group">
             <label class="visually-hidden" for="name">Имя и фамилия</label>
-            <input class="field" type="text" id="name" name="name" placeholder="Имя и фамилия">
+            <input class="field" type="text" id="name" name="name" placeholder="Имя и фамилия" required>
           </p>
           <p class="field-group">
             <label class="visually-hidden" for="email">Электронная почта</label>
-            <input class="field" type="email" id="email" name="email" placeholder="email@example.com">
+            <input class="field" type="email" id="email" name="email" placeholder="email@example.com" required>
           </p>
           <p class="field-group">
-            <label class="visually-hidden" for="comment">Электронная почта</label>
+            <label class="visually-hidden" for="comment">Оставить комментарий</label>
             <textarea class="field" rows="6" cols="45" id="comment" name="comment" placeholder="В свободной форме"></textarea>
           </p>
           <button class="button red-button feedback-form-button" type="submit">Отправить</button>
