@@ -1257,9 +1257,10 @@ input[type="search"]::-webkit-search-cancel-button {
   margin-bottom: 80px;
 
   background-color: #fcfcfc;
-  background: url("../images/delivery.jpg") no-repeat;
+  background-image: url("../images/delivery.jpg");
   background-size: 105% auto;
   background-position: -2px -142px;
+  background-repeat: no-repeat;
   border-radius: 16px;
 }
 
@@ -1425,9 +1426,10 @@ input[type="search"]::-webkit-search-cancel-button {
   padding-right: 752px;
 
   background-color: #fcfcfc;
-  background: url("../images/address.jpg") no-repeat;
+  background-image: url("../images/address.jpg");
   background-size: 100% auto;
   background-position: center;
+  background-repeat: no-repeat;
   border-radius: 16px;
 }
 
@@ -1992,7 +1994,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .toggle-min {
   top: -7px;
-  left: 2px;
+  left: 0;
 }
 
 .toggle-max {
@@ -2006,6 +2008,10 @@ input[type="search"]::-webkit-search-cancel-button {
   position: relative;
   display: block;
   padding-left: 24px;
+}
+
+.control:focus {
+  background-color: #2D3440;
 }
 
 .control-mark {
@@ -2022,6 +2028,11 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .control:hover .control-mark {
   border-color: #fcfcfc;
+}
+
+.control-input:focus + .control-mark {
+  border-color: #2d3440;
+  border-width: medium;
 }
 
 .control-input:disabled + .control-mark {
@@ -2077,6 +2088,12 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .control-input[type="checkbox"]:checked:hover + .control-mark {
   background-image: url("../images/icons/checkbox-hover.svg");
+}
+
+.control-input[type="checkbox"]:focus + .control-mark,
+.control-input[type="checkbox"]:checked:focus + .control-mark {
+  border: 1px solid #2d3440;
+  border-width: medium;
 }
 
 .control-input[type="checkbox"]:checked:disabled + .control-mark {
